@@ -62,15 +62,23 @@ export default function Services() {
             </div>
 
             <div className="w-full sm:w-1/2 mb-4 px-2">
-              <div className="h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl">
+              <div className="h-full py-4 px-6 border border-t-0 border-l-0 rounded-br-xl">
                 <h3 className="text-2xl font-bold mb-6">
-                  Secure Payment Processing
+                  Borem ipsum dolor sit amet, consectetur?
                 </h3>
                 <p className="text-sm">
                   We use cutting-edge security measures to protect our
                   customers' sensitive information and ensure the safety of all
                   transactions made on our site.
                 </p>
+                <div className="mt-12">
+                  <a
+                    className="px-6 py-2 min-w-[120px] text-center text-white bg-buttonColor border border-buttonColor rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring"
+                    href="/download"
+                  >
+                    Explore More
+                  </a>
+                </div>
               </div>
             </div>
           </div>
