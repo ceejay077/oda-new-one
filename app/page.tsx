@@ -4,6 +4,7 @@ import Hero from "./components/hero";
 import Logos from "./components/logos";
 import Services from "./components/services";
 import About from "./components/about";
+import OurServices from "./components/our-services";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Logos />
       <Services />
       <About />
+      <OurServices />
     </div>
   );
 }

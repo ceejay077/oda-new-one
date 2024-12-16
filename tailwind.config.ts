@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import OurServices from "./app/components/our-services";
 
 export default {
   content: [
@@ -13,6 +14,9 @@ export default {
         foreground: "var(--foreground)",
         bannerBlue: "#101E41",
         buttonColor: "#A69024",
+        sectionTitle: "#313132",
+        titleDescription: "#757576",
+        OurServicesBox: "#F2F7FC",
       },
     },
   },
