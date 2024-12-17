@@ -43,8 +43,8 @@ export default function ServiceGrid() {
               <p className="text-sm">
                 Our U.S.-based customer support team is available around the
                 clock to answer any questions, resolve any issues, and provide
-                helpful solutions. Whether it's through email, phone, or live
-                chat, we're always here to support you.
+                helpful solutions. Whether its through email, phone, or live
+                chat, we are always here to support you.
               </p>
             </div>
           </div>
@@ -55,7 +55,7 @@ export default function ServiceGrid() {
                 Borem ipsum dolor sit amet, consectetur?
               </h3>
               <p className="text-sm">
-                We use cutting-edge security measures to protect our customers'
+                We use cutting-edge security measures to protect our customers
                 sensitive information and ensure the safety of all transactions
                 made on our site.
               </p>
