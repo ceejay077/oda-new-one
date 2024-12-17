@@ -42,7 +42,23 @@ function OurServices() {
             </div>
           </div>
           <div className="text-center" style={{ marginTop: "48px" }}>
-            View Service
+            <a
+              href=""
+              className="flex items-center text-indigo-700  py-2 px-6 gap-2 rounded inline-flex items-center"
+            >
+              <span>View More</span>
+              <svg
+                className="w-3 w-5 h-5 ml-2"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+              >
+                <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -104,10 +120,19 @@ function OurServices() {
           <div className="space-y-12">
             <div className="m-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-50">
               <span className="font-bold text-xl text-green-600">
-                <div>hoo</div>
+                <div>
+                  <div>
+                    <Image
+                      src="/images/homePage/our-services/4.svg"
+                      alt="industrial cleaning"
+                      width={500}
+                      height={300}
+                    />
+                  </div>
+                </div>
               </span>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-4 text-center">
               <h3 className="text-2xl font-semibold text-gray-800 transition">
                 Data Collection
               </h3>
@@ -122,7 +147,16 @@ function OurServices() {
         <div className="p-8 py-12 sm:p-12 rounded-3xl bg-OurServicesBox border border-gray-100  shadow-2xl shadow-gray-600/10">
           <div className="space-y-12">
             <div className="m-auto flex h-12 w-12 items-center justify-center rounded-full bg-orange-50">
-              <span className="font-bold text-xl text-orange-600">2</span>
+              <span className="font-bold text-xl text-orange-600">
+                <div>
+                  <Image
+                    src="/images/homePage/our-services/4.svg"
+                    alt="industrial cleaning"
+                    width={500}
+                    height={300}
+                  />
+                </div>
+              </span>
             </div>
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold text-gray-800 transition">
@@ -139,7 +173,16 @@ function OurServices() {
         <div className="p-8 py-12 sm:p-12 rounded-3xl bg-OurServicesBox border border-gray-100  shadow-2xl shadow-gray-600/10">
           <div className="space-y-12">
             <div className="m-auto flex h-12 w-12 items-center justify-center rounded-full bg-purple-50">
-              <span className="font-bold text-xl text-purple-600">3</span>
+              <span className="font-bold text-xl text-purple-600">
+                <div>
+                  <Image
+                    src="/images/homePage/our-services/5.svg"
+                    alt="industrial cleaning"
+                    width={500}
+                    height={300}
+                  />
+                </div>
+              </span>
             </div>
             <div className="space-y-4">
               <h3 className="text-2xl font-semibold text-gray-800 transition">
