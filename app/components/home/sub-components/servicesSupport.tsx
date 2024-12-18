@@ -61,10 +61,10 @@ export default function ServiceGrid() {
               </p>
               <div className="mt-12">
                 <a
-                  className="px-6 py-2 min-w-[120px] text-center text-white bg-buttonColor border border-buttonColor rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring"
+                  className="px-6 py-2 min-w-[120px] text-center text-white bg-CTAButtons border border-CTAButtons rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring"
                   href="/download"
                 >
-                  Explore More
+                  Learn More
                 </a>
               </div>
             </div>

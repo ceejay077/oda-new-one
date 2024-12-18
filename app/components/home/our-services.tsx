@@ -5,7 +5,7 @@ function OurServices() {
   return (
     <div style={{ marginTop: "100px" }}>
       <div className="text-center ">
-        <h2 className="text-3xl font-bold text-gray-900 dark:text-sectionTitle sm:text-4xl xl:text-5xl">
+        <h2 className="text-3xl  text-gray-900 dark:text-sectionTitle sm:text-4xl xl:text-5xl">
           Our Services
         </h2>
         <p className="max-w-md mx-auto mt-5 text-base font-normal text-gray-600 dark:text-titleDescription">
@@ -23,7 +23,7 @@ function OurServices() {
               <span className="font-bold text-xl text-green-600">
                 <div>
                   <Image
-                    src="/images/homePage/our-services/industrial-cleaning.svg"
+                    src="/images/homePage/our-services/2.svg"
                     alt="industrial cleaning"
                     width={500}
                     height={300}
@@ -51,9 +51,9 @@ function OurServices() {
                 className="w-3 w-5 h-5 ml-2"
                 fill="none"
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 viewBox="0 0 24 24"
               >
                 <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
@@ -176,7 +176,7 @@ function OurServices() {
               <span className="font-bold text-xl text-purple-600">
                 <div>
                   <Image
-                    src="/images/homePage/our-services/5.svg"
+                    src="/images/homePage/our-services/4.svg"
                     alt="industrial cleaning"
                     width={500}
                     height={300}

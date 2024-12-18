@@ -30,7 +30,7 @@ const Hero = () => {
               <div className="mt-3 rounded-md shadow sm:mt-0 sm:ml-3 flex flex-row px-12 space-x-10">
                 <div className="flex gap-4">
                   <a
-                    className="px-6 py-2 min-w-[120px] text-center text-white bg-buttonColor border border-buttonColor rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring"
+                    className="px-6 py-2 min-w-[120px] text-center text-white bg-CTAButtons border border-CTAButtons rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring"
                     href="/download"
                   >
                     Explore More
@@ -45,14 +45,14 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div className="flex flex-row items-center justify-center mt-48">
+            {/* <div className="flex flex-row items-center justify-center mt-48">
               <a
                 className="px-6 py-2 min-w-[120px] text-center text-white bg-white bg-gradient-to-r from-buttonColor to-white/50 border border-buttonColor rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring"
                 href="/download"
               >
                 Request Quote | +
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
