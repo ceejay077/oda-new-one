@@ -8,6 +8,7 @@ import OurServices from "./components/home/our-services";
 import LearnMore from "./components/home/sub-components/learnMore";
 import FloatingButton from "./components/home/sub-components/floatingButton";
 import Awards from "./components/home/awards";
+import CallToAction from "./components/home/book-your-appoinment";
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <OurServices />
       <LearnMore />
       <Awards />
+      <CallToAction />
     </div>
   );
 }

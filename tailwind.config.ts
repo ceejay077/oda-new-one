@@ -19,6 +19,7 @@ export default {
         OurServicesBox: "#F2F7FC",
         CTAButtons: "#27479B",
         CTAFloating: "#linear-gradient(267deg, #496CCB 2.65%, #27479B 97.47%)",
+        CTRbg: "#101E41",
       },
     },
   },
