@@ -10,15 +10,17 @@ import FloatingButton from "./components/home/sub-components/floatingButton";
 import Awards from "./components/home/awards";
 import CallToAction from "./components/home/book-your-appoinment";
 import BlogSection from "./components/home/blog-section";
+import Footer from "./components/home/footer";
 
 export default function Home() {
   return (
     <div>
-      <FloatingButton />
       <Banner />
-      <Header />
+      <FloatingButton />
+
+      {/* <Header /> */}
       <Hero />
-      <Logos />
+
       <Services />
       <About />
       <OurServices />
@@ -26,6 +28,7 @@ export default function Home() {
       <Awards />
       <CallToAction />
       <BlogSection />
+      <Footer />
     </div>
   );
 }

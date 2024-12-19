@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Logos() {
   return (
-    <div>
-      <div className="min-h-[220px] w-full dark:bg-white flex justify-center items-center">
+    <div style={{ marginTop: "600px" }}>
+      <div className="min-h-[220px] w-full  flex justify-center items-center ">
         <div className="flex max-w-xl  items-center justify-center gap-4 md:gap-24 dark:text-black">
           <div>
             <img

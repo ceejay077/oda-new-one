@@ -1,6 +1,26 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 
 export default function FloatingButton() {
+  const [isAtTop, setIsAtTop] = useState(true);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsAtTop(window.scrollY === 0);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial check
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  if (isAtTop) {
+    return null;
+  }
+
   return (
     <div>
       <div className="fixed flex flex-col items-center justify-center bottom-4 left-1/2 transform -translate-x-1/2 z-50 space-y-4">
