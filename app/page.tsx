@@ -2,6 +2,7 @@ import Banner from "./components/home/banner";
 import Header from "./components/home/header";
 import Hero from "./components/home/hero";
 import Logos from "./components/home/logos";
+import Logos_copy from "./components/home/logos_copy";
 import Services from "./components/home/services";
 import About from "./components/home/about";
 import OurServices from "./components/home/our-services";
@@ -11,6 +12,7 @@ import Awards from "./components/home/awards";
 import CallToAction from "./components/home/book-your-appoinment";
 import BlogSection from "./components/home/blog-section";
 import Footer from "./components/home/footer";
+import Tesimonials from "./components/home/testimonials";
 
 export default function Home() {
   return (
@@ -23,6 +25,8 @@ export default function Home() {
 
       <Services />
       <About />
+      <Tesimonials />
+      <Logos_copy />
       <OurServices />
       <LearnMore />
       <Awards />

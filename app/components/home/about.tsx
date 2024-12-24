@@ -4,7 +4,7 @@ import Figures from "./sub-components/aboutFigurs";
 export default function about() {
   return (
     <div>
-      <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-gray-50 pt-6 sm:py-12  min-w-full">
+      <div className="relative flex min-h-screen flex-col justify-center overflow-hidden bg-white pt-6 sm:py-12  min-w-full">
         <div className="w-full items-center  max-w-screen-lg max-w-screen  min-w-full">
           <div className="group grid  grid-cols-2">
             <div>

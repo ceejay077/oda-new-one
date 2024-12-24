@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import OurServices from "./app/components/home/our-services";
+import Testimonials from "./app/components/home/testimonials";
 
 export default {
   content: [
@@ -20,6 +21,8 @@ export default {
         CTAButtons: "#27479B",
         CTAFloating: "#linear-gradient(267deg, #496CCB 2.65%, #27479B 97.47%)",
         CTRbg: "#101E41",
+        CTAHeading: "#EAEAEB",
+        TestimonialsBlue: "#F2F7FC",
       },
     },
   },
