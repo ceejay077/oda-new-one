@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import VeiwServices from "./sub-components/view_services_button";
 
 function OurServices() {
   return (
@@ -13,185 +13,161 @@ function OurServices() {
           vulputate libero et velit interdum, ac aliquet odio mattis.
         </p>
       </div>
-      <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 p-4 md:p-8 mx-48">
-        <div
-          className="p-8 py-12 sm:p-12 rounded-2xl bg-OurServicesBox border border-gray-100  shadow-2xl shadow-gray-600/10"
-          //   style={{ width: "464px", height: "358px" }}
-        >
-          <div className="space-y-12">
-            <div className="m-auto flex h-12 w-12 items-center justify-center rounded-full ">
-              <span className="font-bold text-xl text-green-600">
-                <div>
-                  <Image
-                    src="/images/homePage/our-services/2.svg"
-                    alt="industrial cleaning"
-                    width={500}
-                    height={300}
-                  />
-                </div>
-              </span>
+      <div className="mx-[150px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 p-10 md:px-20">
+          <div className="bg-white rounded-md  overflow-hidden">
+            <div className="relative">
+              <img
+                className="w-full h-auto object-cover"
+                src="/images/homePage/our-services/1.png"
+              />
             </div>
-            <div className="space-y-4 text-center">
-              <h3 className="text-2xl font-semibold text-sectionTitle transition ">
+            <div className="pt-4">
+              <div className="text-lg font-medium text-gray-800 mb-2">
+                Construction Cleaning Melbourne
+              </div>
+              <p className="text-gray-500 text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                auctor, mi sed egestas tincidunt, libero dolor bibendum nisl,
+                non aliquam quam massa id lacus.
+              </p>
+            </div>
+            <div className="mt-6">
+              <div>
+                <a href="#">
+                  <VeiwServices />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-md  overflow-hidden">
+            <div className="relative">
+              <img
+                className="w-full h-auto object-cover"
+                src="/images/homePage/our-services/2.png"
+              />
+            </div>
+            <div className="pt-4">
+              <div className="text-lg font-medium text-gray-800 mb-2">
+                Restaurant and Pub Cleaning
+              </div>
+              <p className="text-gray-500 text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                auctor, mi sed egestas tincidunt, libero dolor bibendum nisl,
+                non aliquam quam massa id lacus.
+              </p>
+              <div className="mt-6">
+                <div>
+                  <a href="#">
+                    <VeiwServices />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-md  overflow-hidden">
+            <div className="relative">
+              <img
+                className="w-full h-auto object-cover"
+                src="/images/homePage/our-services/3.png"
+              />
+            </div>
+            <div className="pt-4">
+              <div className="text-lg font-medium text-gray-800 mb-2">
+                Retail and Shopping Centers
+              </div>
+              <p className="text-gray-500 text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                auctor, mi sed egestas tincidunt, libero dolor bibendum nisl,
+                non aliquam quam massa id lacus.
+              </p>
+              <div className="mt-6">
+                <div>
+                  <a href="#">
+                    <VeiwServices />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-white rounded-md  overflow-hidden">
+            <div className="relative">
+              <img
+                className="w-full h-auto object-cover"
+                src="/images/homePage/our-services/4.png"
+              />
+            </div>
+            <div className="pt-4">
+              <div className="text-lg font-medium text-gray-800 mb-2">
                 Industrial Cleaning
-              </h3>
-              <p className="text-gray-600 ">
-                Upload diverse datasets containing various types of information
-                for analysis.
+              </div>
+              <p className="text-gray-500 text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                auctor, mi sed egestas tincidunt, libero dolor bibendum nisl,
+                non aliquam quam massa id lacus.
               </p>
-            </div>
-          </div>
-          <div className="text-center" style={{ marginTop: "48px" }}>
-            <a
-              href=""
-              className="flex items-center text-indigo-700  py-2 px-6 gap-2 rounded inline-flex items-center"
-            >
-              <span>View More</span>
-              <svg
-                className="w-3 w-5 h-5 ml-2"
-                fill="none"
-                stroke="currentColor"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path d="M14 5l7 7m0 0l-7 7m7-7H3"></path>
-              </svg>
-            </a>
-          </div>
-        </div>
-
-        <div className="p-8 py-12 sm:p-12 rounded-3xl bg-OurServicesBox border border-gray-100  shadow-2xl shadow-gray-600/10">
-          <div className="space-y-12">
-            <div className="m-auto flex h-12 w-12 items-center justify-center rounded-full ">
-              <span className="font-bold text-xl text-orange-600">
+              <div className="mt-6">
                 <div>
-                  <Image
-                    src="/images/homePage/our-services/2.svg"
-                    alt="industrial cleaning"
-                    width={500}
-                    height={300}
-                  />
+                  <a href="#">
+                    <VeiwServices />
+                  </a>
                 </div>
-              </span>
+              </div>
             </div>
-            <div className="space-y-4 text-center">
-              <h3 className="text-2xl font-semibold text-sectionTitle transition">
+          </div>
+
+          <div className="bg-white rounded-md  overflow-hidden">
+            <div className="relative">
+              <img
+                className="w-full h-auto object-cover"
+                src="/images/homePage/our-services/5.png"
+              />
+            </div>
+            <div className="pt-4">
+              <div className="text-lg font-medium text-gray-800 mb-2">
                 Office Cleaning Services in Melbourne
-              </h3>
-              <p className="text-gray-600">
-                Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+              </div>
+              <p className="text-gray-500 text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                auctor, mi sed egestas tincidunt, libero dolor bibendum nisl,
+                non aliquam quam massa id lacus.
               </p>
+              <div className="mt-6">
+                <div>
+                  <a href="#">
+                    <VeiwServices />
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="p-8 py-12 sm:p-12 rounded-3xl bg-OurServicesBox border border-gray-100  shadow-2xl shadow-gray-600/10">
-          <div className="space-y-12">
-            <div className="m-auto flex h-12 w-12 items-center justify-center rounded-full ">
-              <span className="font-bold text-xl text-purple-600">
-                <div>
-                  <Image
-                    src="/images/homePage/our-services/3.svg"
-                    alt="industrial cleaning"
-                    width={500}
-                    height={300}
-                  />
-                </div>
-              </span>
+          <div className="bg-white rounded-md  overflow-hidden">
+            <div className="relative">
+              <img
+                className="w-full h-auto object-cover"
+                src="/images/homePage/our-services/6.png"
+              />
             </div>
-            <div className="space-y-4 text-center">
-              <h3 className="text-2xl font-semibold text-gray-800 transition">
+            <div className="pt-4">
+              <div className="text-lg font-medium text-gray-800 mb-2">
                 Commercial Cleaning Melbourne
-              </h3>
-              <p className="text-gray-600">
-                Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+              </div>
+              <p className="text-gray-500 text-sm">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                auctor, mi sed egestas tincidunt, libero dolor bibendum nisl,
+                non aliquam quam massa id lacus.
               </p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 p-4 md:p-8 mx-48">
-        <div className="p-8 py-12 sm:p-12 rounded-3xl bg-OurServicesBox border border-gray-100  shadow-2xl shadow-gray-600/10">
-          <div className="space-y-12">
-            <div className="m-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-50">
-              <span className="font-bold text-xl text-green-600">
+              <div className="mt-6">
                 <div>
-                  <div>
-                    <Image
-                      src="/images/homePage/our-services/4.svg"
-                      alt="industrial cleaning"
-                      width={500}
-                      height={300}
-                    />
-                  </div>
+                  <a href="#">
+                    <VeiwServices />
+                  </a>
                 </div>
-              </span>
-            </div>
-            <div className="space-y-4 text-center">
-              <h3 className="text-2xl font-semibold text-gray-800 transition">
-                Data Collection
-              </h3>
-              <p className="text-gray-600">
-                Upload diverse datasets containing various types of information
-                for analysis.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="p-8 py-12 sm:p-12 rounded-3xl bg-OurServicesBox border border-gray-100  shadow-2xl shadow-gray-600/10">
-          <div className="space-y-12">
-            <div className="m-auto flex h-12 w-12 items-center justify-center rounded-full bg-orange-50">
-              <span className="font-bold text-xl text-orange-600">
-                <div>
-                  <Image
-                    src="/images/homePage/our-services/4.svg"
-                    alt="industrial cleaning"
-                    width={500}
-                    height={300}
-                  />
-                </div>
-              </span>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-gray-800 transition">
-                Model Training
-              </h3>
-              <p className="text-gray-600">
-                Allow the AI model to learn patterns and insights from the
-                provided data. This may take some time.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="p-8 py-12 sm:p-12 rounded-3xl bg-OurServicesBox border border-gray-100  shadow-2xl shadow-gray-600/10">
-          <div className="space-y-12">
-            <div className="m-auto flex h-12 w-12 items-center justify-center rounded-full bg-purple-50">
-              <span className="font-bold text-xl text-purple-600">
-                <div>
-                  <Image
-                    src="/images/homePage/our-services/4.svg"
-                    alt="industrial cleaning"
-                    width={500}
-                    height={300}
-                  />
-                </div>
-              </span>
-            </div>
-            <div className="space-y-4">
-              <h3 className="text-2xl font-semibold text-gray-800 transition">
-                Insights Delivery
-              </h3>
-              <p className="text-gray-600">
-                Receive comprehensive insights and analysis results based on the
-                trained AI model.
-              </p>
+              </div>
             </div>
           </div>
         </div>
