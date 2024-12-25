@@ -1,4 +1,5 @@
 import React from "react";
+import HeroHeading from "./heroHeading";
 
 const Header = () => {
   return (
