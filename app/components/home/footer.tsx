@@ -39,8 +39,22 @@ export default function Footer() {
           <a href="#">Operations Management</a>
           <a href="#">Marketing Management</a>
         </div>
+        <div className="flex flex-col gap-2 text-sm">
+          <p className="text-base font-bold tracking-wide text-white">
+            Popular Courses
+          </p>
+          <a href="#">UPSC - Union Public Service Commission</a>
+          <a href="#">General Knowledge</a>
+          <a href="#">MBA</a>
+          <p className="text-base font-bold tracking-wide text-white">
+            Popular Topics
+          </p>
+          <a href="#">Human Resource Management</a>
+          <a href="#">Operations Management</a>
+          <a href="#">Marketing Management</a>
+        </div>
 
-        <div>
+        {/* <div>
           <p className="text-base font-bold tracking-wide text-white">
             COMPANY IS ALSO AVAILABLE ON
           </p>
@@ -72,7 +86,7 @@ export default function Footer() {
               admin@company.com
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* ---------------------------------------------------------------------------------------------------- */}
