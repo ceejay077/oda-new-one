@@ -1,4 +1,5 @@
 import React from "react";
+import FooterSocial from "./sub-components/footerSocial";
 
 export default function Footer() {
   return (
@@ -77,35 +78,18 @@ export default function Footer() {
       {/* ---------------------------------------------------------------------------------------------------- */}
 
       <div className="flex flex-col-reverse justify-between pt-5 pb-10  lg:flex-row mx-44">
-        <p className="text-sm text-gray-600">
-          © Copyright 2023 Company. All rights reserved.
-        </p>
-        <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
-          <li>
-            <a
-              href="#"
-              className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              Privacy &amp; Cookies Policy
-            </a>
-          </li>
-          <li>
-            <a
-              href="#"
-              className="text-sm text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400"
-            >
-              Disclaimer
-            </a>
-          </li>
-        </ul>
+        <div>
+          <FooterSocial />
+        </div>
+        <div>
+          <img src="/images/oda-white.png" alt="" />
+        </div>
       </div>
 
       {/* ---------------------------------------------------------------------------------------------------- */}
 
       <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row mx-44">
-        <p className="text-sm text-gray-600">
-          © Copyright 2023 Company. All rights reserved.
-        </p>
+        <p className="text-sm text-gray-600">© 2024 All rights reserved</p>
         <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li>
             <a

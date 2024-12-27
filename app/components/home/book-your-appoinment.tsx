@@ -4,7 +4,7 @@ export default function CallToAction() {
   return (
     <div>
       <section
-        className="text-white body-font bg-CTRbg"
+        className="text-white body-font bg-CTRbg h-screen flex flex-row content-center"
         style={{ marginBottom: "160px" }}
       >
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
