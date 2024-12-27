@@ -10,6 +10,9 @@ export default {
   ],
   theme: {
     extend: {
+      scrollSnapType: ["responsive"],
+      scrollSnapAlign: ["responsive"],
+      scrollSnapStop: ["responsive"],
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

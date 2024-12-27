@@ -16,24 +16,49 @@ import Success from "./components/home/our_success_works";
 
 export default function Home() {
   return (
-    <div>
-      <Banner />
-      <FloatingButton />
-
-      {/* <Header /> */}
-      <Hero />
-
-      <Services />
-      <About />
-      <Tesimonials />
-      <Logos_copy />
-      <OurServices />
-      <LearnMore />
-      <Awards />
-      <Success />
-      <CallToAction />
-      <BlogSection />
-      <Footer />
+    <div className="h-screen overflow-y-auto snap-y snap-mandatory">
+      <div className="snap-start ">
+        <Banner />
+      </div>
+      <div className="snap-start">
+        <FloatingButton />
+      </div>
+      <div className="snap-start h-screen">
+        <Hero />
+      </div>
+      <div className="snap-start h-screen">
+        <Services />
+      </div>
+      <div className="snap-start h-screen">
+        <About />
+      </div>
+      <div className="snap-start h-screen">
+        <Tesimonials />
+      </div>
+      <div className="snap-start ">
+        <Logos_copy />
+      </div>
+      <div className="snap-start h-screen">
+        <OurServices />
+      </div>
+      <div className="snap-start h-screen">
+        <LearnMore />
+      </div>
+      <div className="snap-start h-screen">
+        <Awards />
+      </div>
+      <div className="snap-start h-screen">
+        <Success />
+      </div>
+      <div className="snap-start h-screen">
+        <CallToAction />
+      </div>
+      <div className="snap-start h-screen">
+        <BlogSection />
+      </div>
+      <div className="snap-start ">
+        <Footer />
+      </div>
     </div>
   );
 }
