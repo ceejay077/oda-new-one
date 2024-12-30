@@ -4,7 +4,7 @@ export default function ServiceGrid() {
   return (
     <div className="flex flex-col">
       <div>
-        <h1 className="text-2xl">Trusted Cleaning Experts</h1>
+        <h1 className="text-6xl mb-5">Trusted Cleaning Experts</h1>
         <p>
           Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis.
@@ -13,7 +13,7 @@ export default function ServiceGrid() {
       <div>
         <div className="flex-1 flex flex-col sm:flex-row flex-wrap -mb-4 -mx-2 ">
           <div className="w-2/4 sm:w-1/2 mb-4 px-2 ">
-            <div className="h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl">
+            <div className="h-full py-4 px-6 shadow-md border-t-0 border-l-0 rounded-br-xl">
               <h3 className="text-2xl font-bold mb-6">
                 Dynamic Personalization
               </h3>
@@ -25,7 +25,7 @@ export default function ServiceGrid() {
             </div>
           </div>
           <div className="w-full sm:w-1/2 mb-4 px-2">
-            <div className="h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl">
+            <div className="h-full py-4 px-6 shadow-md border-t-0 border-l-0 rounded-br-xl">
               <h3 className="text-2xl font-bold mb-6">
                 Mobile-Optimized Interface
               </h3>
@@ -38,7 +38,7 @@ export default function ServiceGrid() {
           </div>
 
           <div className="w-full sm:w-1/2 mb-4 px-2">
-            <div className="h-full py-4 px-6 border border-green-500 border-t-0 border-l-0 rounded-br-xl">
+            <div className="h-full py-4 px-6 shadow-md border-t-0 border-l-0 rounded-br-xl">
               <h3 className="text-2xl font-bold mb-6">24/7 Customer Support</h3>
               <p className="text-sm">
                 Our U.S.-based customer support team is available around the
@@ -50,7 +50,7 @@ export default function ServiceGrid() {
           </div>
 
           <div className="w-full sm:w-1/2 mb-4 px-2">
-            <div className="h-full py-4 px-6 border border-t-0 border-l-0 rounded-br-xl">
+            <div className="h-full py-4 px-6  rounded-br-xl">
               <h3 className="text-2xl font-bold mb-6">
                 Borem ipsum dolor sit amet, consectetur?
               </h3>

@@ -3,8 +3,8 @@ import VeiwServices from "./sub-components/view_services_button";
 
 function OurServices() {
   return (
-    <div style={{ marginTop: "100px" }}>
-      <div className="text-center ">
+    <div style={{ marginTop: "100px", minHeight: "100vh" }}>
+      <div className="text-center">
         <h2 className="text-3xl  text-gray-900 dark:text-sectionTitle sm:text-4xl xl:text-5xl">
           Our Services
         </h2>

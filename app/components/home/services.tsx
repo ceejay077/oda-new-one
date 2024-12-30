@@ -19,7 +19,7 @@ export default function Services() {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-md" style={{ marginTop: "100px" }}>
+      <div className="max-w-screen-md mr-10" style={{ marginTop: "100px" }}>
         <ServiceGrid />
       </div>
     </div>
