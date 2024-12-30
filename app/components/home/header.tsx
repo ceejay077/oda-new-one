@@ -2,7 +2,7 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="">
+    <div>
       <div>
         <div className="bg-white backdrop-blur-sm bg-opacity-5  px-1 flex  text-black  justify-between z-100">
           <div className="flex justify-between">
@@ -20,12 +20,12 @@ const Header = () => {
             <nav>
               <ul className="flex flex-row  list-none  gap-12">
                 <li className="mx-2">
-                  <a href="#" className="text-white hover:text-blue-500">
+                  <a href="/" className="text-white hover:text-blue-500">
                     Home
                   </a>
                 </li>
                 <li className="mx-2">
-                  <a href="#" className="text-white hover:text-blue-500">
+                  <a href="/about" className="text-white hover:text-blue-500">
                     About Us
                   </a>
                 </li>
