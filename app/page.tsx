@@ -33,17 +33,19 @@ export default function Home() {
         <About />
       </div>
       <div className="snap-start h-screen">
-        <Tesimonials />
-      </div>
-      <div className="snap-start ">
-        <Logos_copy />
-      </div>
-      <div className="snap-start h-screen">
         <OurServices />
       </div>
       <div className="snap-start h-screen">
         <LearnMore />
       </div>
+      <div className="snap-start h-screen">
+        <Tesimonials />
+      </div>
+
+      <div className="snap-start ">
+        <Logos_copy />
+      </div>
+
       <div className="snap-start h-screen">
         <Awards />
       </div>
