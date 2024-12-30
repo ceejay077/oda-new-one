@@ -10,7 +10,7 @@ export default function about() {
             <div>
               <div style={{ marginTop: "178px", marginLeft: "200px" }}>
                 <h2 className="text-4xl text-gray-900 mb-9">About ODA</h2>
-                <p className="peer mb-6 text-gray-400">
+                <p className="peer mb-6 text-gray-400 w-3/4">
                   One Direction Australia (ODA) is a leading commercial cleaning
                   company established in 2007, dedicated to addressing industry
                   challenges with professionalism and integrity.
@@ -115,9 +115,22 @@ export default function about() {
 
                 {/* ------------------------------------------------------------------ */}
 
-                <div className=" text-white flex flex-row">
+                <div className="  flex flex-row justify-between w-3/4">
                   <Figures />
-                  <Figures />
+                  <div className="flex flex-col items-center md:items-start">
+                    <div className="font-semibold text-center md:text-left text-4xl text-indigo-800 dark:text-blue-400 mb-1 flex items-start justify-start pt-4">
+                      500+
+                    </div>
+                    <span className="text-lg text-gray-900">projects</span>
+                  </div>
+                </div>
+                <div className="mt-12">
+                  <a
+                    className="px-6 py-2 min-w-[120px] text-center text-white bg-CTAButtons border border-CTAButtons rounded active:text-violet-500 hover:bg-transparent hover:text-violet-600 focus:outline-none focus:ring"
+                    href="/download"
+                  >
+                    Learn More
+                  </a>
                 </div>
               </div>
             </div>
