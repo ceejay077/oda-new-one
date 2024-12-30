@@ -4,7 +4,7 @@ import FooterSocial from "./sub-components/footerSocial";
 export default function Footer() {
   return (
     <footer className="px-3 pt-4 lg:px-9 border-t-2 bg-CTRbg h-[557px]">
-      <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-4 mx-44 mt-8">
+      <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-6 mx-32 mt-8">
         <div className="sm:col-span-2">
           <a href="#" className="inline-flex items-center">
             <span className=" text-xl font-bold tracking-wide text-white">
@@ -24,34 +24,30 @@ export default function Footer() {
             </p>
           </div>
         </div>
-
-        <div className="flex flex-col gap-2 text-sm">
+        <div></div>
+        <div className="flex flex-col gap-2 text-sm text-white">
           <p className="text-base font-bold tracking-wide text-white">
-            Popular Courses
+            Quick Links
           </p>
-          <a href="#">UPSC - Union Public Service Commission</a>
-          <a href="#">General Knowledge</a>
-          <a href="#">MBA</a>
-          <p className="text-base font-bold tracking-wide text-white">
-            Popular Topics
-          </p>
-          <a href="#">Human Resource Management</a>
-          <a href="#">Operations Management</a>
-          <a href="#">Marketing Management</a>
+          <a href="#">About Us</a>
+          <a href="#">Services</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Certifications & Awards</a>
         </div>
-        <div className="flex flex-col gap-2 text-sm">
+        <div className="flex flex-col gap-2 text-sm text-white">
           <p className="text-base font-bold tracking-wide text-white">
-            Popular Courses
+            Information
           </p>
-          <a href="#">UPSC - Union Public Service Commission</a>
-          <a href="#">General Knowledge</a>
-          <a href="#">MBA</a>
+          <a href="#">FAQ</a>
+          <a href="#">News</a>
+        </div>
+        <div className="flex flex-col gap-2 text-sm text-white">
           <p className="text-base font-bold tracking-wide text-white">
-            Popular Topics
+            Company
           </p>
-          <a href="#">Human Resource Management</a>
-          <a href="#">Operations Management</a>
-          <a href="#">Marketing Management</a>
+          <a href="#">About Us</a>
+          <a href="#">Careers</a>
+          <a href="#">Contact Us</a>
         </div>
 
         {/* <div>
@@ -91,7 +87,7 @@ export default function Footer() {
 
       {/* ---------------------------------------------------------------------------------------------------- */}
 
-      <div className="flex flex-col-reverse justify-between pt-5 pb-10  lg:flex-row mx-44">
+      <div className="flex flex-col-reverse justify-between pt-5 pb-10  lg:flex-row mx-32">
         <div>
           <FooterSocial />
         </div>
@@ -102,7 +98,7 @@ export default function Footer() {
 
       {/* ---------------------------------------------------------------------------------------------------- */}
 
-      <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row mx-44">
+      <div className="flex flex-col-reverse justify-between pt-5 pb-10 border-t lg:flex-row mx-32">
         <p className="text-sm text-gray-600">© 2024 All rights reserved</p>
         <ul className="flex flex-col mb-3 space-y-2 lg:mb-0 sm:space-y-0 sm:space-x-5 sm:flex-row">
           <li>
