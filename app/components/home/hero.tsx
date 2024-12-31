@@ -11,7 +11,7 @@ const Hero = () => {
           {/* Background overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
           {/* Header Section */}
-          <header className="w-screen items-center z-20 relative">
+          <header className="w-full items-center z-20 relative">
             <Header />
           </header>
           <div className="absolute top-1/2 transform -translate-y-1/2 z-30 ml-[200px]">
