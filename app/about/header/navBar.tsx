@@ -1,78 +1,105 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
+import { Menu, X } from "lucide-react";
 
-function NavBar() {
+const ResponsiveHeader = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const navigationLinks = [
+    { href: "/", label: "Home" },
+    { href: "#", label: "About Us" },
+    { href: "#", label: "Services" },
+    { href: "#", label: "Our Works" },
+    { href: "#", label: "Certificates" },
+    { href: "#", label: "News" },
+    { href: "#", label: "Careers" },
+  ];
+
   return (
-    <div>
-      <div>
-        <div>
-          <div className="bg-white backdrop-blur-sm bg-opacity-5  px-1 flex  text-black  justify-between z-100">
-            <div className="flex justify-between">
-              <div className="text-sm flex flex-dirction:row;">
-                <div className="pl-6 flex ">
-                  <img
-                    src="/images/oda_logo.png"
-                    alt="Description"
-                    className="max-w-52 max-h-28 "
-                  />
-                </div>
-              </div>
-            </div>
-            <div className="flex items-center justify-center h-32 ">
-              <nav>
-                <ul className="flex flex-row  list-none  gap-12">
-                  <li className="mx-2">
-                    <a href="/" className="text-black hover:text-blue-500">
-                      Home
-                    </a>
-                  </li>
-                  <li className="mx-2">
-                    <a href="#" className="text-black hover:text-blue-500">
-                      About Us
-                    </a>
-                  </li>
-                  <li className="mx-2">
-                    <a href="#" className="text-black hover:text-blue-500">
-                      Services
-                    </a>
-                  </li>
-                  <li className="mx-2">
-                    <a href="#" className="text-black hover:text-blue-500">
-                      Our Works
-                    </a>
-                  </li>
-                  <li className="mx-2">
-                    <a href="#" className="text-black hover:text-blue-500">
-                      Certificates
-                    </a>
-                  </li>
-                  <li className="mx-2">
-                    <a href="#" className="text-black hover:text-blue-500">
-                      News
-                    </a>
-                  </li>
-                  <li className="mx-2">
-                    <a href="#" className="text-black hover:text-blue-500">
-                      Careers
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-            <div className="px-9">
-              <div className="flex items-center justify-center h-32">
+    <div className="relative">
+      <div className="bg-white backdrop-blur-sm bg-opacity-5 px-4 md:px-6 flex flex-wrap items-center justify-between w-full">
+        {/* Logo Section */}
+        <div className="flex items-center py-4">
+          <img
+            src="/images/oda_logo.png"
+            alt="Description"
+            className="h-16 md:h-20 w-auto"
+          />
+        </div>
+
+        {/* Mobile Menu Button */}
+        <div className="flex md:hidden">
+          <button
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="p-2 text-gray-600 hover:text-gray-900"
+          >
+            {isMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <Menu className="h-6 w-6" />
+            )}
+          </button>
+        </div>
+
+        {/* Desktop Navigation */}
+        <nav className="hidden md:flex items-center">
+          <ul className="flex flex-row list-none gap-4 lg:gap-8 xl:gap-12">
+            {navigationLinks.map((link) => (
+              <li key={link.label} className="mx-2">
                 <a
-                  className="px-12 py-2 min-w-[120px] text-center text-blue border border-blue rounded hover:bg-grey-600 hover:text-blue active:bg-buttonColor focus:outline-none focus:ring"
-                  href="/download"
+                  href={link.href}
+                  className="text-black hover:text-blue-500 text-sm lg:text-base"
                 >
-                  Contact Us
+                  {link.label}
                 </a>
-              </div>
-            </div>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        {/* Contact Us Button */}
+        <div className="hidden md:flex items-center">
+          <a
+            className="px-6 lg:px-12 py-2 text-sm lg:text-base min-w-[120px] text-center text-blue border border-blue rounded hover:bg-gray-100 active:bg-gray-200 focus:outline-none focus:ring"
+            href="/download"
+          >
+            Contact Us
+          </a>
+        </div>
+
+        {/* Mobile Menu */}
+        <div
+          className={`${
+            isMenuOpen ? "flex" : "hidden"
+          } absolute top-full left-0 right-0 md:hidden flex-col w-full bg-white shadow-lg z-50`}
+        >
+          <nav className="px-4 py-2">
+            <ul className="flex flex-col space-y-2">
+              {navigationLinks.map((link) => (
+                <li key={link.label}>
+                  <a
+                    href={link.href}
+                    className="block py-2 text-black hover:text-blue-500"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="px-4 py-4 border-t">
+            <a
+              className="block w-full py-2 text-center text-blue border border-blue rounded hover:bg-gray-100"
+              href="/download"
+            >
+              Contact Us
+            </a>
           </div>
         </div>
       </div>
     </div>
   );
-}
+};
 
-export default NavBar;
+export default ResponsiveHeader;
