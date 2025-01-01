@@ -14,12 +14,12 @@ const Hero = () => {
           <header className="w-full items-center z-20 relative">
             <Header />
           </header>
-          <div className="absolute top-1/2 transform -translate-y-1/2 z-30 ml-[200px]">
+          {/* Hero Heading */}
+          <div className="absolute top-1/2 transform -translate-y-1/2 z-30 px-4 sm:px-8 md:ml-[100px] lg:ml-[200px]">
             <HeroHeading />
           </div>
-
           {/* Logos Section */}
-          <div className="relative z-30">
+          <div className="relative z-30 mt-4 sm:mt-8 px-4">
             <Logos />
           </div>
         </div>
