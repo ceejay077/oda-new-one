@@ -66,7 +66,7 @@ export default function Legacy() {
         Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate
         libero et velit interdum, ac aliquet odio mattis.
       </p>
-      <div className="w-3/4 ">
+      <div className="w-8/12 ">
         <div className="relative overflow-hidden">
           {/* Navigation Bar */}
           <div className="absolute inset-x-0 pt-7 z-10 bg-gradient-to-b from-black/50 to-transparent">

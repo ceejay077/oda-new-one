@@ -1,7 +1,19 @@
 "use client";
 
+import { cn } from "@/lib/utils";
+
 const Team = () => {
   const teamMembers = [
+    {
+      name: "Jane Doe",
+      role: "Web Developer",
+      image: "https://i.pravatar.cc/150?img=32",
+    },
+    {
+      name: "Jane Doe",
+      role: "Web Developer",
+      image: "https://i.pravatar.cc/150?img=32",
+    },
     {
       name: "Jane Doe",
       role: "Web Developer",
@@ -49,37 +61,95 @@ const Team = () => {
         </div>
 
         {/* Team Grid - Now on the right */}
-        <div className="sm:w-6/12">
-          <ul className="grid grid-cols-2 gap-5 md:gap-10">
+        <div className="w-8/12">
+          <ul className="grid grid-cols-3 gap-5 ">
             {teamMembers.map((member, index) => (
-              <li key={index} className="bg-gray-100 p-5 py-10 text-center">
+              <li key={index} className="bg-gray-100  text-center">
                 <div className="flex flex-col items-center">
                   <div className="flex-shrink-0">
                     <a href="#">
                       <img
-                        className="mb-3 rounded-full mx-auto h-24 w-24"
+                        className="mb-3 rounded-sm mx-auto h-48 w-auto"
                         src={member.image}
                         alt={member.name}
                       />
                     </a>
                   </div>
-                  <div className="text-center">
-                    <h4 className="text-lg leading-6 font-semibold text-gray-900 transition duration-500 ease-in-out">
-                      <a
-                        href="#"
-                        className="hover:text-indigo-600 transition duration-500 ease-in-out"
-                      >
-                        {member.name}
-                      </a>
-                    </h4>
-                    <p className="text-sm leading-6 text-gray-500 uppercase">
-                      {member.role}
-                    </p>
-                  </div>
+                </div>
+                <div className="text-left">
+                  <h4 className="text-lg leading-3 font-semibold text-gray-900 transition duration-500 ease-in-out">
+                    <a
+                      href="#"
+                      className="hover:text-indigo-600 transition duration-500 ease-in-out"
+                    >
+                      {member.name}
+                    </a>
+                  </h4>
+                  <p className="text-sm leading-6 text-gray-500 uppercase">
+                    {member.role}
+                  </p>
                 </div>
               </li>
             ))}
           </ul>
+        </div>
+      </div>
+      <div className="flex flex-row justify-center mt-10">
+        <div>
+          <button className="bg-yellow-500 text-white px-2 py-2 rounded-sm mx-2 hover:bg-yellow-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M9.57007 5.92993L3.50007 11.9999L9.57007 18.0699"
+                stroke="#313132"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M20.5 12H3.67"
+                stroke="#313132"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </div>
+        <div>
+          <button className="bg-yellow-500 text-white px-2 py-2 rounded-sm mx-2 hover:bg-yellow-200">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+            >
+              <path
+                d="M14.4299 5.92993L20.4999 11.9999L14.4299 18.0699"
+                stroke="#313132"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+              <path
+                d="M3.5 12H20.33"
+                stroke="#313132"
+                stroke-width="2"
+                stroke-miterlimit="10"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
         </div>
       </div>
     </div>
