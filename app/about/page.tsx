@@ -2,7 +2,8 @@ import Banner from "../components/home/banner";
 import NavBar from "./header/navBar";
 import HeroAbout from "./header/hero";
 import AboutPageAboutSection from "./about-about-page";
-import AboutSectionGrid from "./about-sub-component/aboutSectionGrid";
+import Legacy from "./legacySlider";
+import Team from "./team";
 
 export default function Hello() {
   return (
@@ -11,6 +12,8 @@ export default function Hello() {
       <NavBar />
       <HeroAbout />
       <AboutPageAboutSection />
+      <Legacy />
+      <Team />
     </div>
   );
 }
