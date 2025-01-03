@@ -107,18 +107,18 @@ const Team = () => {
               <path
                 d="M9.57007 5.92993L3.50007 11.9999L9.57007 18.0699"
                 stroke="#313132"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M20.5 12H3.67"
                 stroke="#313132"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
@@ -135,18 +135,18 @@ const Team = () => {
               <path
                 d="M14.4299 5.92993L20.4999 11.9999L14.4299 18.0699"
                 stroke="#313132"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
               <path
                 d="M3.5 12H20.33"
                 stroke="#313132"
-                stroke-width="2"
-                stroke-miterlimit="10"
-                stroke-linecap="round"
-                stroke-linejoin="round"
+                strokeWidth="2"
+                strokeMiterlimit="10"
+                strokeLinecap="round"
+                strokeLinejoin="round"
               />
             </svg>
           </button>
