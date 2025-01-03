@@ -7,32 +7,32 @@ const Team = () => {
     {
       name: "Jane Doe",
       role: "Web Developer",
-      image: "https://i.pravatar.cc/150?img=32",
+      image: "/images/about/team/image.png",
     },
     {
       name: "Jane Doe",
       role: "Web Developer",
-      image: "https://i.pravatar.cc/150?img=32",
+      image: "/images/about/team/image2.png",
     },
     {
       name: "Jane Doe",
       role: "Web Developer",
-      image: "https://i.pravatar.cc/150?img=32",
+      image: "/images/about/team/image3.png",
     },
     {
       name: "Jane Doe",
       role: "Web Developer",
-      image: "https://i.pravatar.cc/150?img=32",
+      image: "/images/about/team/image4.png",
     },
     {
       name: "Jane Doe",
       role: "Web Developer",
-      image: "https://i.pravatar.cc/150?img=32",
+      image: "/images/about/team/image5.png",
     },
     {
       name: "Jane Doe",
       role: "Web Developer",
-      image: "https://i.pravatar.cc/150?img=32",
+      image: "/images/about/team/image6.png",
     },
   ];
 
