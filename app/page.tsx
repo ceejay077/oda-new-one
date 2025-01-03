@@ -1,5 +1,4 @@
 import Banner from "./components/home/banner";
-import Header from "./components/home/header";
 import Hero from "./components/home/hero";
 import Logos_copy from "./components/home/logos_copy";
 import Services from "./components/home/services";
