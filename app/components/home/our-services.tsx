@@ -22,6 +22,7 @@ function OurServices() {
             <div className="bg-white rounded-md  overflow-hidden">
               <div className="relative">
                 <img
+                  alt="oda- Services"
                   className="w-full h-auto object-cover"
                   src="/images/homePage/our-services/1.png"
                 />
