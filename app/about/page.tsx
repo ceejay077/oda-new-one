@@ -6,6 +6,8 @@ import Legacy from "./legacySlider";
 import Team from "./team";
 import AdditionalServices from "../about/additionalInformation";
 import CallToAction from "../components/home/book-your-appoinment";
+import FAQSection from "../about/faq";
+import Footer from "../components/home/footer";
 
 export default function Hello() {
   return (
@@ -18,6 +20,8 @@ export default function Hello() {
       <Team />
       <AdditionalServices />
       <CallToAction />
+      <FAQSection />
+      <Footer />
     </div>
   );
 }
