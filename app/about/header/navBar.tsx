@@ -7,8 +7,8 @@ const ResponsiveHeader = () => {
 
   const navigationLinks = [
     { href: "/", label: "Home" },
-    { href: "#", label: "About Us" },
-    { href: "#", label: "Services" },
+    { href: "/about", label: "About Us" },
+    { href: "/services-category", label: "Services" },
     { href: "#", label: "Our Works" },
     { href: "#", label: "Certificates" },
     { href: "#", label: "News" },

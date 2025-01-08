@@ -9,7 +9,7 @@ import CallToAction from "../components/home/book-your-appoinment";
 import FAQSection from "../about/faq";
 import Footer from "../components/home/footer";
 
-export default function Hello() {
+export default function AboutPage() {
   return (
     <div>
       <Banner />
