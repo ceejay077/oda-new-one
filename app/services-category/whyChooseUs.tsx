@@ -1,5 +1,5 @@
 import React from "react";
-import AdditionalServiceGrid from "../about/about-sub-component/additionalGrid";
+import WhyChosseUsGrid from "./services-category-sub-components/whyChooseUsGrid";
 
 export default function WhyChooseUs() {
   return (
@@ -23,7 +23,7 @@ export default function WhyChooseUs() {
 
       {/* Right Section */}
       <div className="max-w-screen-md w-full px-4 sm:px-8 lg:mr-10 mt-8 md:mt-12 lg:mt-16">
-        <AdditionalServiceGrid />
+        <WhyChosseUsGrid />
       </div>
     </div>
   );
