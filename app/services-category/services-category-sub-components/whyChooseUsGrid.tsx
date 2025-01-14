@@ -47,7 +47,7 @@ export default function WhyChosseUsGrid() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold mb-6 text-center">
-                Dynamic Personalization
+                Eco Friendly Cleaning
               </h3>
               <p className="text-sm text-center">
                 Our platform leverages user data and behavior to provide a
@@ -76,7 +76,7 @@ export default function WhyChosseUsGrid() {
                 </svg>
               </div>
               <h3 className="text-2xl font-bold mb-6">
-                Mobile-Optimized Interface
+                Expericaned Cleaning Professionals
               </h3>
               <p className="text-sm">
                 Our website is designed with a mobile-first approach, offering a
@@ -120,7 +120,9 @@ export default function WhyChosseUsGrid() {
                   </defs>
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-6">24/7 Customer Support</h3>
+              <h3 className="text-2xl font-bold mb-6">
+                Comprehensive Safety Standards
+              </h3>
               <p className="text-sm">
                 Our U.S.-based customer support team is available around the
                 clock to answer any questions, resolve any issues, and provide
@@ -164,7 +166,9 @@ export default function WhyChosseUsGrid() {
                   </defs>
                 </svg>
               </div>
-              <h3 className="text-2xl font-bold mb-6">24/7 Customer Support</h3>
+              <h3 className="text-2xl font-bold mb-6">
+                Flexible Scheduling Options
+              </h3>
               <p className="text-sm">
                 Our U.S.-based customer support team is available around the
                 clock to answer any questions, resolve any issues, and provide
