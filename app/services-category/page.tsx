@@ -7,6 +7,7 @@ import Awards from "../components/home/awards";
 import CallToAction from "../components/home/book-your-appoinment";
 import Testimonials from "../components/home/testimonials";
 import FAQSection from "../about/faq";
+import Footer from "../components/home/footer";
 
 export default function ServicesCategory() {
   return (
@@ -20,6 +21,7 @@ export default function ServicesCategory() {
       <CallToAction />
       <Testimonials />
       <FAQSection />
+      <Footer />
     </div>
   );
 }
