@@ -3,6 +3,8 @@ import Banner from "../components/home/banner";
 import ResponsiveHeader from "../about/header/navBar";
 import OurServices from "../components/home/our-services";
 import WhyChooseUs from "./whyChooseUs";
+import Awards from "../components/home/awards";
+import CallToAction from "../components/home/book-your-appoinment";
 
 export default function ServicesCategory() {
   return (
@@ -12,6 +14,8 @@ export default function ServicesCategory() {
       <HeroServicesCategory />
       <OurServices />
       <WhyChooseUs />
+      <Awards />
+      <CallToAction />
     </div>
   );
 }
