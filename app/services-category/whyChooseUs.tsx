@@ -12,7 +12,7 @@ export default function WhyChooseUs() {
             <div className="mb-6 lg:mb-0">
               <img
                 className="max-w-full max-h-[960px] w-full"
-                src="/images/about/additional-info.png"
+                src="/images/service-category-page/cleaning-person-with-mask.png"
                 alt="can_help_banner"
               />
             </div>
