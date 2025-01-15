@@ -8,9 +8,9 @@ const ResponsiveWhiteHeader = () => {
   const navigationLinks = [
     { href: "/", label: "Home" },
     { href: "/about", label: "About Us" },
-    { href: "#", label: "Services" },
+    { href: "/services-category", label: "Services" },
     { href: "#", label: "Our Works" },
-    { href: "#", label: "Certificates" },
+    { href: "/certificates", label: "Certificates" },
     { href: "#", label: "News" },
     { href: "#", label: "Careers" },
   ];
