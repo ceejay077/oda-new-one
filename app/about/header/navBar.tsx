@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 const ResponsiveHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,7 +11,7 @@ const ResponsiveHeader = () => {
     { href: "/about", label: "About Us" },
     { href: "/services-category", label: "Services" },
     { href: "#", label: "Our Works" },
-    { href: "#", label: "Certificates" },
+    { href: "/certificates", label: "Certificates" },
     { href: "#", label: "News" },
     { href: "#", label: "Careers" },
   ];
@@ -20,10 +21,12 @@ const ResponsiveHeader = () => {
       <div className="bg-white backdrop-blur-sm bg-opacity-5 px-4 md:px-6 flex flex-wrap items-center justify-between w-full">
         {/* Logo Section */}
         <div className="flex items-center py-4">
-          <img
+          <Image
             src="/images/oda_logo.png"
             alt="Description"
             className="h-16 md:h-20 w-auto"
+            width={100}
+            height={100}
           />
         </div>
 
