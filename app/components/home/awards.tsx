@@ -7,7 +7,6 @@ export default function Awards() {
       style={{
         marginLeft: "200px",
         marginRight: "200px",
-        marginBottom: "80px",
         marginTop: "100px",
       }}
     >
