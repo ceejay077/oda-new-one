@@ -26,6 +26,7 @@ export default {
         CTRbg: "#101E41",
         CTAHeading: "#EAEAEB",
         TestimonialsBlue: "#F2F7FC",
+        
       },
     },
   },
