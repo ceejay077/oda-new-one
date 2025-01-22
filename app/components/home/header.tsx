@@ -12,7 +12,7 @@ const ResponsiveWhiteHeader = () => {
     { href: "#", label: "Our Works" },
     { href: "/certificates", label: "Certificates" },
     { href: "#", label: "News" },
-    { href: "#", label: "Careers" },
+    { href: "/careers", label: "Careers" },
   ];
 
   return (
