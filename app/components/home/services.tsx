@@ -4,6 +4,7 @@ import ServiceGrid from "./sub-components/servicesSupport";
 export default function Services() {
   return (
     <div className="flex flex-col lg:flex-row bg-white text-black">
+      <div className="sm:hidden">Trusted Cleaning Experts</div>
       {/* Left Section */}
       <div className="bg-white text-black flex justify-center max-h-screen w-full lg:w-1/2">
         <div className="max-w-screen mx-auto py-8 lg:py-16 bg-white px-4 sm:px-8">
@@ -22,9 +23,12 @@ export default function Services() {
       </div>
 
       {/* Right Section */}
-      <div className="max-w-screen-md w-full px-4 sm:px-8 lg:mr-10 mt-8 md:mt-12 lg:mt-16">
+      <div className="max-w-screen-md w-full px-4 sm:px-8 lg:mr-10 mt-8 md:mt-12 lg:mt-16 sm:hidden lg:block">
         <ServiceGrid />
       </div>
+      {/* <div className="hidden lg:block">
+        <ServiceGrid />
+      </div> */}
     </div>
   );
 }

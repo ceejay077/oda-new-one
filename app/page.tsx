@@ -12,6 +12,7 @@ import BlogSection from "./components/home/blog-section";
 import Footer from "./components/home/footer";
 import Tesimonials from "./components/home/testimonials";
 import Success from "./components/home/our_success_works";
+import LogosMobile from "./components/mobile-logo-slider/mobileLogoSlider";
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
         <Hero />
       </div>
       <div className="snap-start h-screen">
+        <div className="md:hidden">
+          <LogosMobile />
+        </div>
         <Services />
       </div>
       <div className="snap-start h-screen">
