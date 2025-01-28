@@ -16,23 +16,28 @@ function TrustedCleaningServices() {
         </div>
 
         {/* Right Column - Sponsors Section */}
-        <div className="w-full sm:w-1/2 bg-gray-200">
-          <div className="p-3 sm:p-5 pt-8 border border-gray-200  relative bg-gray-50 ">
+        <div className="w-full sm:w-1/2  sm:mr-16">
+          <div className="p-3 sm:p-5 pt-8    relative  ">
             {/* <div className="absolute w-auto rounded-b-lg border-b uppercase -translate-y-px tracking-wide leading-none border-l border-r border-gray-200 dark:border-gray-800 shadow-sm top-0 left-1/2 -translate-x-1/2 px-3 pt-1 pb-2 bg-white dark:bg-black text-gray-400 text-[0.65rem]">
               🤩 Our Amazing Sponsors 👇
             </div> */}
             <div className="text-center my-8">
-              <h1>hello world</h1>
+              <h1 className="text-4xl">Trusted Cleaning Experts</h1>
+            </div>
+            <div className="text-center my-12">
+              Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+              vulputate libero et velit interdum, ac aliquet odio mattis.
             </div>
             <div className="max-w-5xl mx-auto">
               <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-5 not-prose">
                 <a
                   href="#"
                   target="_blank"
-                  className="relative flex flex-col items-start justify-between p-4 sm:p-6 overflow-hidden rounded-xl border border-gray-200 dark:border-gray-800 dark:bg-black bg-white group"
+                  className="relative flex flex-col items-start justify-between p-4 sm:p-6 overflow-hidden rounded-xl border border-gray-200   bg-white "
                 >
-                  <span className="absolute w-full h-full bg-white dark:bg-black inset-0 dark:group-hover:bg-gray-900 group-hover:bg-gray-50 group-hover:bg-opacity-30"></span>
+                  <span className="absolute w-full h-full bg-white"></span>
                   <div className="flex items-center justify-between w-full mb-4">
+                    <h1 className="text-white font-bold">Eco Friendly</h1>
                     <img
                       src="https://cdn.devdojo.com/sponsors/digital-ocean.svg"
                       alt="DigitalOcean"
@@ -54,7 +59,9 @@ function TrustedCleaningServices() {
                       </svg>
                     </span>
                   </div>
+
                   <span className="relative text-xs md:text-sm text-gray-600 dark:text-gray-400">
+                    <div className="text-black">Eco Friendly</div>
                     DigitalOcean offers a simple and reliable cloud hosting
                     solution that enables developers to get their website or
                     application up and running quickly.
