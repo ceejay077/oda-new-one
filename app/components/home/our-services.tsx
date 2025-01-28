@@ -3,7 +3,7 @@ import VeiwServices from "./sub-components/view_services_button";
 
 function OurServices() {
   return (
-    <div className="flex flex-col sm:flex-row justify-center content-center lg:mt-32  px-4">
+    <div className="flex flex-col sm:flex-row justify-center content-center lg:mt-32  px-4 mt-11">
       <div className="text-center">
         <h2 className="text-3xl text-gray-900 dark:text-sectionTitle sm:text-4xl xl:text-5xl">
           Our Services
