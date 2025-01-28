@@ -1,7 +1,6 @@
 import Banner from "./components/home/banner";
 import Hero from "./components/home/hero";
 import Logos_copy from "./components/home/logos_copy";
-import Services from "./components/home/services";
 import About from "./components/home/about";
 import OurServices from "./components/home/our-services";
 import LearnMore from "./components/home/sub-components/learnMore";
@@ -13,57 +12,30 @@ import Footer from "./components/home/footer";
 import Tesimonials from "./components/home/testimonials";
 import Success from "./components/home/our_success_works";
 import LogosMobile from "./components/mobile-logo-slider/mobileLogoSlider";
+import TrustedCleaningServices from "./components/home/trusted-cleaning-services-section/trustedCleaningServicesSection";
 
 export default function Home() {
   return (
-    <div className="h-screen overflow-y-auto snap-y snap-mandatory">
-      <div className="snap-start ">
+    <div>
+      <div className="hidden sm:hidden md:block lg:block xl:block 2xl:block">
         <Banner />
       </div>
-      <div className="snap-start">
-        <FloatingButton />
-      </div>
-      <div className="snap-start h-screen">
+      {/* -------------------------------- */}
+      <div>
         <Hero />
       </div>
-      <div className="snap-start h-screen">
-        <div className="md:hidden">
-          <LogosMobile />
-        </div>
-        <Services />
-      </div>
-      <div className="snap-start h-screen">
-        <About />
-      </div>
-      <div className="snap-start h-screen">
-        <OurServices />
-      </div>
-      <div className="snap-start h-screen">
-        <LearnMore />
-      </div>
-      <div className="snap-start h-screen">
-        <Tesimonials />
-      </div>
-
-      <div className="snap-start ">
+      {/* -------------------------------- */}
+      <div className=" sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">
         <Logos_copy />
       </div>
-
-      <div className="snap-start h-screen">
-        <Awards />
+      {/* -------------------------------- */}
+      <div>
+        <TrustedCleaningServices />
       </div>
-      <div className="snap-start h-screen">
-        <Success />
+      <div>
+        <OurServices />
       </div>
-      <div className="snap-start h-screen">
-        <CallToAction />
-      </div>
-      <div className="snap-start h-screen">
-        <BlogSection />
-      </div>
-      <div className="snap-start ">
-        <Footer />
-      </div>
+      {/* -------------------------------------- */}
     </div>
   );
 }
