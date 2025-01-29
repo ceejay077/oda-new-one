@@ -3,7 +3,7 @@ import React from "react";
 export default function Logos_copy() {
   return (
     <div>
-      <div className="min-h-[220px] w-full  flex justify-center items-center ">
+      <div className="min-h-[220px] w-full  flex justify-center items-center overflow-hidden">
         <div className="flex max-w-xl  items-center justify-center gap-4 md:gap-24 dark:text-black">
           <div>
             <img
