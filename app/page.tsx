@@ -13,6 +13,7 @@ import Tesimonials from "./components/home/testimonials";
 import Success from "./components/home/our_success_works";
 import LogosMobile from "./components/mobile-logo-slider/mobileLogoSlider";
 import TrustedCleaningServices from "./components/home/trusted-cleaning-services-section/trustedCleaningServicesSection";
+import Logos from "./components/home/logos";
 
 export default function Home() {
   return (
@@ -24,11 +25,18 @@ export default function Home() {
       <div>
         <Hero />
       </div>
+      <div>
+        <Logos />
+      </div>
       {/* -------------------------------- */}
       <div className=" sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">
         <Logos_copy />
       </div>
       {/* -------------------------------- */}
+
+      <div>
+        <About />
+      </div>
       <div>
         <TrustedCleaningServices />
       </div>

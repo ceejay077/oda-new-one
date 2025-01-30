@@ -19,9 +19,6 @@ const Hero = () => {
             <HeroHeading />
           </div>
           {/* Logos Section */}
-          <div className="relative z-30 mt-4 sm:mt-8 px-4">
-            <Logos />
-          </div>
         </div>
       </div>
     </div>

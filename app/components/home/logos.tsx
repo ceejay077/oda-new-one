@@ -5,10 +5,10 @@ export default function Logos() {
 
   return (
     <div className="hidden md:block">
-      <div className="mt-[600px]">
+      <div className="mt-5">
         <div className="min-h-[220px] w-full flex justify-center items-center">
           <div className="flex max-w-xl items-center justify-center gap-4 md:gap-24 dark:text-black">
-            {logos.map((index) => (
+            {logos.map(index => (
               <div key={index}>
                 <img
                   src={`/images/logos/${index}.png`}
