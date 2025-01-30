@@ -9,9 +9,10 @@ export default function about() {
           {/* Content Section */}
           <div className="order-2 lg:order-1">
             <div className="max-w-xl mx-auto lg:mx-0">
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="hidden sm:block text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
                 About ODA
               </h2>
+
               <p className="text-gray-400 mb-8">
                 One Direction Australia (ODA) is a leading commercial cleaning
                 company established in 2007, dedicated to addressing industry
@@ -71,6 +72,10 @@ export default function about() {
 
           {/* Image Section */}
           <div className="order-1 lg:order-2">
+            <h2 className="block sm:hidden text-3xl font-normal text-gray-900 mb-6">
+              About ODA
+            </h2>
+
             <div className="relative w-full h-full">
               <img
                 className="w-full h-auto rounded-lg shadow-lg"
