@@ -33,15 +33,21 @@ export default function Home() {
         <Logos_copy />
       </div>
       {/* -------------------------------- */}
-
-      <div>
-        <About />
-      </div>
       <div>
         <TrustedCleaningServices />
       </div>
+      <div className="mt-40">
+        <About />
+      </div>
+
       <div>
         <OurServices />
+      </div>
+      <div className="mt-40">
+        <Tesimonials />
+      </div>
+      <div>
+        <Awards />
       </div>
       {/* -------------------------------------- */}
     </div>
