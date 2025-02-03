@@ -62,6 +62,9 @@ export default function Home() {
       <div>
         <BlogSection />
       </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
