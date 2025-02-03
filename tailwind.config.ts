@@ -21,11 +21,12 @@ export default {
         sectionTitle: "#313132",
         titleDescription: "#757576",
         OurServicesBox: "#F2F7FC",
-        CTAButtons: "#27479B",
+        CTAButtons: "#EACB32",
         CTAFloating: "#linear-gradient(267deg, #496CCB 2.65%, #27479B 97.47%)",
         CTRbg: "#101E41",
         CTAHeading: "#EAEAEB",
         TestimonialsBlue: "#F2F7FC",
+
         
       },
     },

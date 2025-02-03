@@ -6,9 +6,9 @@ function Testimonials() {
       <section
         id="testimonials"
         aria-label="What our customers are saying"
-        className="bg-white py-10 min-h-screen max-h-screen"
+        className="bg-white py-10  "
       >
-        <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 max-h-screen">
+        <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 ">
           <div className="mx-auto max-w-screen-2xl r text-left">
             <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl mb-5">
               Client Stories of Satisfaction

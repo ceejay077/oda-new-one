@@ -26,7 +26,7 @@ export default function about() {
                   "A well-recognized name in commercial cleaning.",
                   "Honesty, passion, talent, and growth mindset.",
                   "Handpicked professionals for exceptional cleaning ability.",
-                  "Logs for your API calls."
+                  "Logs for your API calls.",
                 ].map((feature, index) => (
                   <li key={index} className="flex items-start">
                     <div className="flex-shrink-0">

@@ -1,106 +1,125 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import SuccessReadMore from "./sub-components/readMoreSuccessSection";
+import { ChevronLeft, ChevronRight } from "lucide-react";
+
+const posts = [
+  {
+    title: "Construction Cleaning Melbourne",
+    image: "/images/homePage/success-works/1.png",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, mi sed egestas tincidunt, libero dolor bibendum nisl, non aliquam quam massa id lacus.",
+  },
+  {
+    title: "Restaurant and Pub Cleaning",
+    image: "/images/homePage/success-works/2.png",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, mi sed egestas tincidunt, libero dolor bibendum nisl, non aliquam quam massa id lacus.",
+  },
+  {
+    title: "Retail and Shopping Centers",
+    image: "/images/homePage/success-works/3.png",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, mi sed egestas tincidunt, libero dolor bibendum nisl, non aliquam quam massa id lacus.",
+  },
+];
 
 export default function BlogSection() {
-  return (
-    <div>
-      <div style={{ marginTop: "100px" }}>
-        <div className="mx-[150px]">
-          <div className="flex flex-row items-center  justify-between">
-            <h2 className="text-3xl mx-[75px]  text-gray-900 dark:text-sectionTitle sm:text-4xl xl:text-5xl">
-              Latest News from ODA{" "}
-            </h2>
-            <div className="mr-[80px] flex flex-row items-center font-bold text-CTAButtons underline">
-              <div>See all news</div>
-            </div>
-          </div>
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 p-10 md:px-20">
-            <div className="bg-white rounded-md  overflow-hidden">
-              <div className="relative">
-                <img
-                  className="w-full h-auto object-cover"
-                  src="/images/homePage/success-works/1.png"
-                />
-              </div>
-              <div className="pt-4">
-                <div className="text-lg font-medium text-gray-800 mb-2">
-                  Construction Cleaning Melbourne
-                </div>
-                <p className="text-gray-500 text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  auctor, mi sed egestas tincidunt, libero dolor bibendum nisl,
-                  non aliquam quam massa id lacus.
-                </p>
-              </div>
-              <div className="mt-6">
-                <div>
+  const nextSlide = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % posts.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentIndex(
+      (prevIndex) => (prevIndex - 1 + posts.length) % posts.length
+    );
+  };
+
+  return (
+    <div className="mt-24 mx-auto max-w-7xl px-4">
+      <div className="flex justify-between items-center mb-6">
+        <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold text-gray-900 dark:text-sectionTitle">
+          Latest News from ODA
+        </h2>
+        <div className="text-CTAButtons underline font-bold cursor-pointer">
+          See all news
+        </div>
+      </div>
+
+      <div className="relative">
+        <div className="hidden lg:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 p-10 md:px-20">
+          {posts.map((post, index) => (
+            <div key={index} className="bg-white rounded-md overflow-hidden">
+              <img
+                className="w-full h-auto object-cover"
+                src={post.image}
+                alt={post.title}
+              />
+              <div className="pt-4 px-4 pb-6">
+                <h3 className="text-lg font-medium text-gray-800 mb-2">
+                  {post.title}
+                </h3>
+                <p className="text-gray-500 text-sm">{post.description}</p>
+                <div className="mt-6">
                   <a href="#">
                     <SuccessReadMore />
                   </a>
                 </div>
               </div>
             </div>
-            {/* ----------------------------------------------------------------------------------------------------- */}
-            <div className="bg-white rounded-md  overflow-hidden">
-              <div className="relative">
-                <img
-                  className="w-full h-auto object-cover"
-                  src="/images/homePage/success-works/2.png"
-                />
-              </div>
-              <div className="pt-4">
-                <div className="text-lg font-medium text-gray-800 mb-2">
-                  Restaurant and Pub Cleaning
-                </div>
-                <p className="text-gray-500 text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  auctor, mi sed egestas tincidunt, libero dolor bibendum nisl,
-                  non aliquam quam massa id lacus.
-                </p>
-                <div className="mt-6">
-                  <div>
-                    <a href="#">
-                      <SuccessReadMore />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* ----------------------------------------------------------------------------------------------------- */}
-
-            <div className="bg-white rounded-md  overflow-hidden">
-              <div className="relative">
-                <img
-                  className="w-full h-auto object-cover"
-                  src="/images/homePage/success-works/3.png"
-                />
-              </div>
-              <div className="pt-4">
-                <div className="text-lg font-medium text-gray-800 mb-2">
-                  Retail and Shopping Centers
-                </div>
-                <p className="text-gray-500 text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  auctor, mi sed egestas tincidunt, libero dolor bibendum nisl,
-                  non aliquam quam massa id lacus.
-                </p>
-                <div className="mt-6">
-                  <div>
-                    <a href="#">
-                      <SuccessReadMore />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/* ----------------------------------------------------------------------------------------------------- */}
-
-            {/* ----------------------------------------------------------------------------------------------------- */}
-
-            {/* -------------------------------------------s--------------------------------------------------------- */}
-          </div>
+          ))}
         </div>
+
+        {/* Mobile Slider */}
+        <div className="lg:hidden flex items-center justify-center relative">
+          <button
+            className="absolute left-0 z-10 p-2 bg-gray-700 text-white rounded-full"
+            onClick={prevSlide}
+          >
+            <ChevronLeft size={24} />
+          </button>
+          <div className="w-full p-5 flex flex-col items-center bg-white rounded-md overflow-hidden">
+            <img
+              className="w-full h-auto object-cover"
+              src={posts[currentIndex].image}
+              alt={posts[currentIndex].title}
+            />
+            <div className="pt-4 px-4 pb-6 text-center">
+              <h3 className="text-lg font-medium text-gray-800 mb-2">
+                {posts[currentIndex].title}
+              </h3>
+              <p className="text-gray-500 text-sm">
+                {posts[currentIndex].description}
+              </p>
+              <div className="mt-6">
+                <a href="#">
+                  <SuccessReadMore />
+                </a>
+              </div>
+            </div>
+          </div>
+          <button
+            className="absolute right-0 z-10 p-2 bg-gray-700 text-white rounded-full"
+            onClick={nextSlide}
+          >
+            <ChevronRight size={24} />
+          </button>
+        </div>
+      </div>
+
+      {/* Navigation Dots */}
+      <div className="lg:hidden flex justify-center mt-4">
+        {posts.map((_, index) => (
+          <button
+            key={index}
+            className={`h-2 w-2 mx-1 rounded-full ${
+              currentIndex === index ? "bg-gray-800" : "bg-gray-400"
+            }`}
+            onClick={() => setCurrentIndex(index)}
+          ></button>
+        ))}
       </div>
     </div>
   );

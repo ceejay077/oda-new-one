@@ -36,20 +36,32 @@ export default function Home() {
       <div>
         <TrustedCleaningServices />
       </div>
-      <div className="mt-40">
+      <div className="sm:mt-5 lg:mt-40">
         <About />
       </div>
 
       <div>
         <OurServices />
       </div>
-      <div className="mt-40">
+      <div className="sm:mt-5 lg:mt-40">
         <Tesimonials />
       </div>
       <div>
         <Awards />
       </div>
+      <div>
+        <Logos />
+      </div>
+      <div className=" sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">
+        <Logos_copy />
+      </div>
+      <div>
+        <CallToAction />
+      </div>
       {/* -------------------------------------- */}
+      <div>
+        <BlogSection />
+      </div>
     </div>
   );
 }
