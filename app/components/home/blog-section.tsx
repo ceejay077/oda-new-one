@@ -5,35 +5,36 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const posts = [
   {
-    title: "Construction Cleaning Melbourne",
+    title: "ODA Achieves 200+ Happy Clients Milestone!",
     image: "/images/homePage/success-works/1.png",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, mi sed egestas tincidunt, libero dolor bibendum nisl, non aliquam quam massa id lacus.",
+      "One Direction Australia proudly announces reaching over 200 satisfied clients, a testament to their exceptional commercial cleaning services.",
   },
   {
-    title: "Restaurant and Pub Cleaning",
+    title: "Restaurant and Pub Cleaning Success",
     image: "/images/homePage/success-works/2.png",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, mi sed egestas tincidunt, libero dolor bibendum nisl, non aliquam quam massa id lacus.",
+      "Our team has transformed restaurants and pubs with top-tier cleaning services, ensuring compliance and customer satisfaction.",
   },
   {
-    title: "Retail and Shopping Centers",
+    title: "Retail and Shopping Centers Cleaning Excellence",
     image: "/images/homePage/success-works/3.png",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor, mi sed egestas tincidunt, libero dolor bibendum nisl, non aliquam quam massa id lacus.",
+      "Keeping retail and shopping centers spotless to enhance customer experience and maintain high standards.",
   },
 ];
 
 export default function BlogSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const itemsPerPage = window.innerWidth >= 1024 ? 3 : 1;
 
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % posts.length);
+    setCurrentIndex((prevIndex) => (prevIndex + itemsPerPage) % posts.length);
   };
 
   const prevSlide = () => {
     setCurrentIndex(
-      (prevIndex) => (prevIndex - 1 + posts.length) % posts.length
+      (prevIndex) => (prevIndex - itemsPerPage + posts.length) % posts.length
     );
   };
 
@@ -43,83 +44,70 @@ export default function BlogSection() {
         <h2 className="text-3xl sm:text-4xl xl:text-5xl font-bold text-gray-900 dark:text-sectionTitle">
           Latest News from ODA
         </h2>
-        <div className="text-CTAButtons underline font-bold cursor-pointer">
-          See all news
+        <div className="text-blue-600 underline font-semibold cursor-pointer">
+          See all insights
         </div>
       </div>
 
-      <div className="relative">
-        <div className="hidden lg:grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-14 p-10 md:px-20">
-          {posts.map((post, index) => (
-            <div key={index} className="bg-white rounded-md overflow-hidden">
-              <img
-                className="w-full h-auto object-cover"
-                src={post.image}
-                alt={post.title}
-              />
-              <div className="pt-4 px-4 pb-6">
-                <h3 className="text-lg font-medium text-gray-800 mb-2">
-                  {post.title}
-                </h3>
-                <p className="text-gray-500 text-sm">{post.description}</p>
-                <div className="mt-6">
-                  <a href="#">
-                    <SuccessReadMore />
-                  </a>
+      <div className="relative w-full flex justify-center">
+        <div className="w-full max-w-7xl lg:p-10 sm:p-1 md:px-20 grid grid-cols-1 lg:grid-cols-3 gap-6">
+          {posts
+            .slice(currentIndex, currentIndex + itemsPerPage)
+            .map((post, index) => (
+              <div
+                key={index}
+                className="bg-white rounded-lg shadow-md overflow-hidden"
+              >
+                <img
+                  className="w-full h-60 object-cover"
+                  src={post.image}
+                  alt={post.title}
+                />
+                <div className="pt-4 px-6 pb-6">
+                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                    {post.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {post.description}
+                  </p>
+                  <div className="mt-4">
+                    <a href="#" className="text-blue-600 font-medium">
+                      Read More →
+                    </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </div>
-
-        {/* Mobile Slider */}
-        <div className="lg:hidden flex items-center justify-center relative">
-          <button
-            className="absolute left-0 z-10 p-2 bg-gray-700 text-white rounded-full"
-            onClick={prevSlide}
-          >
-            <ChevronLeft size={24} />
-          </button>
-          <div className="w-full p-5 flex flex-col items-center bg-white rounded-md overflow-hidden">
-            <img
-              className="w-full h-auto object-cover"
-              src={posts[currentIndex].image}
-              alt={posts[currentIndex].title}
-            />
-            <div className="pt-4 px-4 pb-6 text-center">
-              <h3 className="text-lg font-medium text-gray-800 mb-2">
-                {posts[currentIndex].title}
-              </h3>
-              <p className="text-gray-500 text-sm">
-                {posts[currentIndex].description}
-              </p>
-              <div className="mt-6">
-                <a href="#">
-                  <SuccessReadMore />
-                </a>
-              </div>
-            </div>
-          </div>
-          <button
-            className="absolute right-0 z-10 p-2 bg-gray-700 text-white rounded-full"
-            onClick={nextSlide}
-          >
-            <ChevronRight size={24} />
-          </button>
+            ))}
         </div>
       </div>
 
-      {/* Navigation Dots */}
-      <div className="lg:hidden flex justify-center mt-4">
-        {posts.map((_, index) => (
+      {/* Navigation Section */}
+      <div className="flex justify-between items-center mt-6 px-4">
+        <div className="flex space-x-2">
+          {posts.map((_, index) => (
+            <button
+              key={index}
+              className={`h-3 w-3 rounded-full transition-all duration-300 ${
+                currentIndex === index ? "bg-yellow-500" : "bg-gray-400"
+              }`}
+              onClick={() => setCurrentIndex(index)}
+            ></button>
+          ))}
+        </div>
+        <div className="flex space-x-2">
           <button
-            key={index}
-            className={`h-2 w-2 mx-1 rounded-full ${
-              currentIndex === index ? "bg-gray-800" : "bg-gray-400"
-            }`}
-            onClick={() => setCurrentIndex(index)}
-          ></button>
-        ))}
+            className="p-3 bg-yellow-500 rounded-md disabled:opacity-50"
+            onClick={prevSlide}
+          >
+            <ChevronLeft size={20} className="text-white" />
+          </button>
+          <button
+            className="p-3 bg-yellow-500 rounded-md disabled:opacity-50"
+            onClick={nextSlide}
+          >
+            <ChevronRight size={20} className="text-white" />
+          </button>
+        </div>
       </div>
     </div>
   );
