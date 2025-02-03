@@ -4,7 +4,7 @@ function HeroHeading() {
   return (
     <div>
       <div className="w-full mb-8 md:mb-0">
-        <h1 className="text-[48px] sm:text-[60px] md:text-[80px] lg:text-[120px] leading-[1.2] text-white mb-4">
+        <h1 className="text-[48px] sm:text-[60px] md:text-[80px] lg:text-[120px] leading-[1.2] text-white mb-4 ">
           Cleaning <br /> Melbourne
         </h1>
 

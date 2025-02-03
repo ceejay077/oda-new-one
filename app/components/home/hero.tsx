@@ -15,7 +15,7 @@ const Hero = () => {
             <Header />
           </header>
           {/* Hero Heading */}
-          <div className="absolute top-1/2 transform -translate-y-1/2 z-30 px-4 sm:px-8 md:ml-[100px] lg:ml-[200px]">
+          <div className="absolute top-1/2 transform -translate-y-1/2 z-10 px-4 sm:px-8 md:ml-[100px] lg:ml-[200px]">
             <HeroHeading />
           </div>
           {/* Logos Section */}

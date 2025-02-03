@@ -20,7 +20,7 @@ const ResponsiveWhiteHeader = () => {
       <div className="bg-white backdrop-blur-sm bg-opacity-5 px-4 md:px-6 flex flex-wrap items-center justify-between w-full">
         {/* Logo Section */}
         <div className="flex items-center py-4">
-          <div className="pl-0 md:pl-6">
+          <div className="lg:pl-0 md:pl-6 sm:ml-28">
             <img
               src="/images/oda_logo.png"
               alt="Description"
@@ -74,7 +74,7 @@ const ResponsiveWhiteHeader = () => {
         <div
           className={`${
             isMenuOpen ? "flex" : "hidden"
-          } absolute top-full left-0 right-0 md:hidden flex-col w-full bg-black bg-opacity-90 shadow-lg z-50`}
+          } absolute top-full left-0 right-0 md:hidden flex-col w-full bg-black bg-opacity-90 shadow-lg z-30`}
         >
           <nav className="px-4 py-2">
             <ul className="flex flex-col space-y-2">
@@ -106,3 +106,65 @@ const ResponsiveWhiteHeader = () => {
 };
 
 export default ResponsiveWhiteHeader;
+
+// on this mobile menu should be bring front of the screen by z index.  and for the mobile version please bring logo to the middle : "use client";
+// import React, { useState } from "react";
+// import { Menu, X } from "lucide-react";
+
+// const ResponsiveWhiteHeader = () => {
+//   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+//   const navigationLinks = [
+//     { href: "/", label: "Home" },
+//     { href: "/about", label: "About Us" },
+//     { href: "/services-category", label: "Services" },
+//     { href: "#", label: "Our Works" },
+//     { href: "/certificates", label: "Certificates" },
+//     { href: "#", label: "News" },
+//     { href: "/careers", label: "Careers" },
+//   ];
+
+//   return (
+
+//         {/* Logo Section */}
+
+//         {/* Mobile Menu Button */}
+
+//            setIsMenuOpen(!isMenuOpen)}
+//             className="p-2 text-white hover:text-blue-500"
+//             aria-label="Toggle menu"
+//           >
+//             {isMenuOpen ? (
+
+//             ) : (
+
+//             )}
+
+//         {/* Desktop Navigation */}
+
+//             {navigationLinks.map((link) => (
+
+//                   {link.label}
+
+//             ))}
+
+//         {/* Contact Us Button */}
+
+//             Contact Us
+
+//         {/* Mobile Menu */}
+
+//               {navigationLinks.map((link) => (
+
+//                    setIsMenuOpen(false)}
+//                   >
+//                     {link.label}
+
+//               ))}
+
+//               Contact Us
+
+//   );
+// };
+
+// export default ResponsiveWhiteHeader;

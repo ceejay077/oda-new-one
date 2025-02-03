@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import SuccessReadMore from "./sub-components/readMoreSuccessSection";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
@@ -26,7 +26,13 @@ const posts = [
 
 export default function BlogSection() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsPerPage = window.innerWidth >= 1024 ? 3 : 1;
+  const [itemsPerPage, setItemsPerPage] = useState(1);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      setItemsPerPage(window.innerWidth >= 1024 ? 3 : 1);
+    }
+  }, []);
 
   const nextSlide = () => {
     setCurrentIndex((prevIndex) => (prevIndex + itemsPerPage) % posts.length);
