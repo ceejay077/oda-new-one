@@ -14,6 +14,7 @@ import Success from "./components/home/our_success_works";
 import LogosMobile from "./components/mobile-logo-slider/mobileLogoSlider";
 import TrustedCleaningServices from "./components/home/trusted-cleaning-services-section/trustedCleaningServicesSection";
 import Logos from "./components/home/logos";
+import Form from "./components/home/form";
 
 export default function Home() {
   return (
@@ -61,6 +62,9 @@ export default function Home() {
       {/* -------------------------------------- */}
       <div>
         <BlogSection />
+      </div>
+      <div className=" sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">
+        <Form />
       </div>
       <div>
         <Footer />
