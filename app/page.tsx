@@ -40,13 +40,13 @@ export default function Home() {
       <div className="sm:mt-5 lg:mt-40">
         <About />
       </div>
-
+      <div>
+        <Tesimonials />
+      </div>
       <div>
         <OurServices />
       </div>
-      <div className="sm:mt-5 lg:mt-40">
-        <Tesimonials />
-      </div>
+
       <div>
         <Awards />
       </div>

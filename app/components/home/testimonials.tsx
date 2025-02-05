@@ -55,7 +55,7 @@ function Testimonials() {
                         <div className="font-display font-bold text-base text-slate-900 ml-4">
                           Sheryl Berge
                           <span className="font-normal">
-                            <p>pakaya</p>
+                            <p>User</p>
                           </span>
                         </div>
                       </div>
@@ -98,7 +98,7 @@ function Testimonials() {
                         <div className="font-display font-bold text-base text-slate-900 ml-4">
                           Sheryl Berge
                           <span className="font-normal">
-                            <p>pakaya</p>
+                            <p>User</p>
                           </span>
                         </div>
                       </div>
@@ -141,7 +141,7 @@ function Testimonials() {
                         <div className="font-display font-bold text-base text-slate-900 ml-4">
                           Sheryl Berge
                           <span className="font-normal">
-                            <p>pakaya</p>
+                            <p>User</p>
                           </span>
                         </div>
                       </div>
