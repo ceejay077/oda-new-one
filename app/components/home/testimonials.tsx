@@ -6,7 +6,7 @@ function Testimonials() {
       <section
         id="testimonials"
         aria-label="What our customers are saying"
-        className="bg-white py-10  "
+        className="bg-white pt-[300px]  min-h-screen"
       >
         <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 ">
           <div className="mx-auto max-w-screen-2xl r text-left">

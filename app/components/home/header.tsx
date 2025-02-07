@@ -19,12 +19,12 @@ const ResponsiveWhiteHeader = () => {
     <div className="w-full relative">
       <div className="bg-white backdrop-blur-sm bg-opacity-5 px-4 md:px-6 flex flex-wrap items-center justify-between w-full">
         {/* Logo Section */}
-        <div className="flex items-center py-4">
+        <div className="flex items-center ">
           <div className="lg:pl-0 md:pl-6 sm:ml-28">
             <img
               src="/images/oda_logo.png"
               alt="Description"
-              className="h-16 md:h-20 w-auto"
+              className="h-[120px]  w-[204.03px]"
             />
           </div>
         </div>
@@ -63,7 +63,7 @@ const ResponsiveWhiteHeader = () => {
         {/* Contact Us Button */}
         <div className="hidden md:flex items-center h-32 px-4 md:px-9">
           <a
-            className="px-6 lg:px-12 py-2 min-w-[120px] text-center text-white border border-white rounded hover:bg-gray-600 transition-colors active:bg-gray-700 focus:outline-none focus:ring focus:ring-white/50"
+            className="px-6 lg:px-12 min-h-[60px] min-w-[200px] text-center text-white border border-white rounded-[8px] hover:bg-gray-600 transition-colors active:bg-gray-700 focus:outline-none focus:ring focus:ring-white/50 flex flex-col justify-center"
             href="/download"
           >
             Contact Us

@@ -40,13 +40,13 @@ export default function Home() {
       <div className="sm:mt-5 lg:mt-40">
         <About />
       </div>
-      <div>
-        <Tesimonials />
-      </div>
+
       <div>
         <OurServices />
       </div>
-
+      <div>
+        <Tesimonials />
+      </div>
       <div>
         <Awards />
       </div>
@@ -60,7 +60,7 @@ export default function Home() {
         <CallToAction />
       </div>
       {/* -------------------------------------- */}
-      <div>
+      <div className="mb-10">
         <BlogSection />
       </div>
       <div className=" sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">
