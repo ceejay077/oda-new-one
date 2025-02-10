@@ -1,9 +1,40 @@
 import React from "react";
-import VeiwServices from "./sub-components/view_services_button";
+
+const serviceData = [
+  {
+    title: "Construction Cleaning",
+    description:
+      "Professional cleaning services for construction sites and post-construction projects.",
+  },
+  {
+    title: "Commercial Cleaning",
+    description:
+      "Comprehensive cleaning solutions for commercial spaces and offices.",
+  },
+  {
+    title: "Residential Cleaning",
+    description:
+      "Thorough cleaning services for homes and residential properties.",
+  },
+  {
+    title: "Industrial Cleaning",
+    description:
+      "Specialized cleaning services for industrial facilities and warehouses.",
+  },
+  {
+    title: "Window Cleaning",
+    description:
+      "Professional window cleaning services for buildings of all heights.",
+  },
+  {
+    title: "Carpet Cleaning",
+    description: "Deep cleaning services for carpets and floor coverings.",
+  },
+];
 
 function OurServices() {
   return (
-    <div className="flex flex-col items-center  mt-11 lg:mt-32">
+    <div className="flex flex-col items-center mt-11 lg:mt-32">
       {/* Title and Description Section */}
       <div className="text-center mb-12 max-w-4xl">
         <h2 className="text-3xl text-gray-900 dark:text-sectionTitle sm:text-4xl xl:text-5xl">
@@ -16,34 +47,45 @@ function OurServices() {
       </div>
 
       {/* Grid Section */}
-      <div className="w-full max-w-full px-[100px]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
-          {[...Array(6)].map((_, index) => (
+      <div className="w-full max-w-full  px-[200px]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[64px]">
+          {serviceData.map((service, index) => (
             <div
               key={index}
-              className="bg-white rounded-md overflow-hidden shadow-md"
+              className="group bg-white rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
             >
-              <div className="relative">
+              <div className="relative h-[400px] w-[464px]">
                 <img
-                  alt="Service Image"
-                  className="w-full h-auto object-cover"
+                  alt={service.title}
+                  className="w-full h-full object-cover"
                   src={`/images/homePage/our-services/${index + 1}.png`}
                 />
-              </div>
-              <div className="p-4">
-                <div className="text-lg font-medium text-gray-800 mb-2">
-                  Service Title {index + 1}
+                {/* Gradient Overlay */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent">
+                  <h3 className="absolute bottom-6 left-6 text-white text-xl font-semibold">
+                    {service.title}
+                  </h3>
                 </div>
-                <p className="text-gray-500 text-sm">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  auctor, mi sed egestas tincidunt.
-                </p>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-600 text-sm">{service.description}</p>
                 <div className="mt-4">
-                  <a href="#" className="text-blue-600 hover:underline">
-                    {/* -------------------------------------------------------------- */}
-                    <div></div>
-                    {/* -------------------------------------------------------------- */}
-                  </a>
+                  <button className="inline-flex items-center px-4 py-2 text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
+                    View Service
+                    <svg
+                      className="ml-2 w-4 h-4"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M9 5l7 7-7 7"
+                      />
+                    </svg>
+                  </button>
                 </div>
               </div>
             </div>

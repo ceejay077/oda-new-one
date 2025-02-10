@@ -48,7 +48,7 @@ export default function Home() {
       <div>
         <OurServices />
       </div>
-      <div>
+      <div className="px-[200px]">
         <Tesimonials />
       </div>
       <div>
