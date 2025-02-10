@@ -22,13 +22,13 @@ export default function FloatingButton() {
   }
 
   return (
-    <div>
-      <div className="fixed flex flex-col items-center justify-center bottom-4 left-1/2 transform -translate-x-1/2 z-50 space-y-4">
+    <div className="fixed bottom-4 right-[200px] z-50 mr-11">
+      <div className="flex flex-col items-center justify-center space-y-4">
         <a
           href="https://www.buymeacoffee.com/yourusername"
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-CTAButtons  text-white font-medium rounded-md px-4 py-2 flex items-center justify-center hover:bg-yellow-600 transition duration-300 ease-in-out shadow-lg"
+          className="bg-gradient-to-r from-[#9B2727] to-[#D14848] text-white font-medium rounded-md h-[64px] w-[265px] flex items-center justify-center hover:bg-[#B30000] transition duration-300 ease-in-out shadow-lg"
         >
           Request a Quote <span className="text-lg mr-2 ml-2"> | +</span>
         </a>

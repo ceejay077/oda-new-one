@@ -24,7 +24,7 @@ const posts = [
   },
 ];
 
-export default function BlogSection() {
+export default function SuccessWorks() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [itemsPerPage, setItemsPerPage] = useState(1);
 
@@ -45,10 +45,10 @@ export default function BlogSection() {
   };
 
   return (
-    <div className="mt-24 mx-auto max-w-7xl px-4">
+    <div className="mt-24 mx-auto max-w-7xl py-32">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-3xl sm:text-4xl xl:text-5xl font-normal text-gray-900 dark:text-sectionTitle">
-          Latest News from ODA
+          Our Success Works
         </h2>
         <div className="text-blue-600 underline font-semibold cursor-pointer">
           See all insights

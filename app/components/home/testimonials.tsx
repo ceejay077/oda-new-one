@@ -8,19 +8,19 @@ function Testimonials() {
         aria-label="What our customers are saying"
         className="bg-white pt-[300px]  min-h-screen"
       >
-        <div className="mx-auto max-w-screen-2xl px-4 sm:px-6 lg:px-8 ">
-          <div className="mx-auto max-w-screen-2xl r text-left">
+        <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8 ">
+          <div className="mx-auto max-w-screen r text-left">
             <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl mb-5">
               Client Stories of Satisfaction
             </h2>
-            <p className="max-w-lg">
+            <p className="max-w-full">
               Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
               vulputate libero et velit interdum, ac aliquet odio mattis.
             </p>
           </div>
           <ul
             role="list"
-            className="mx-auto mt-12 grid max-w-2xl grid-cols-1 gap-6 sm:gap-8 lg:mt-12 lg:max-w-none lg:grid-cols-3"
+            className="mx-auto mt-12 grid max-w-full grid-cols-1 gap-6 sm:gap-8 lg:mt-12 lg:max-w-full lg:grid-cols-3"
           >
             <li>
               <ul role="list" className="flex flex-col gap-y-6 sm:gap-y-8">

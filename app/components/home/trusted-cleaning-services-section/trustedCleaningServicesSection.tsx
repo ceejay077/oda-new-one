@@ -10,12 +10,8 @@ function TrustedCleaningServices() {
             <div className="rounded-lg">
               <div className="block sm:hidden">
                 <div className="text-center my-8">
-                  <h1 className="text-4xl">Trusted Cleaning Experts</h1>
+                  <h1 className="text-sm">Trusted Cleaning Experts</h1>
                 </div>
-                {/* <div className="text-left my-12">
-                  Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                  vulputate libero et velit interdum, ac aliquet odio mattis.
-                </div> */}
               </div>
             </div>
 
@@ -176,7 +172,7 @@ function TrustedCleaningServices() {
                     Corem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
                   <div className="mt-[48px]">
-                    <button className="bg-blue-800 w-[200px] h-[60px] rounded-[8px] text-white">
+                    <button className="bg-[#27479B] w-[200px] h-[60px] rounded-[8px] text-white">
                       Learn More
                     </button>
                   </div>

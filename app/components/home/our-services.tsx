@@ -3,9 +3,9 @@ import VeiwServices from "./sub-components/view_services_button";
 
 function OurServices() {
   return (
-    <div className="flex flex-col items-center px-4 mt-11 lg:mt-32">
+    <div className="flex flex-col items-center  mt-11 lg:mt-32">
       {/* Title and Description Section */}
-      <div className="text-center mb-12 max-w-2xl">
+      <div className="text-center mb-12 max-w-4xl">
         <h2 className="text-3xl text-gray-900 dark:text-sectionTitle sm:text-4xl xl:text-5xl">
           Our Services
         </h2>
@@ -16,7 +16,7 @@ function OurServices() {
       </div>
 
       {/* Grid Section */}
-      <div className="w-full max-w-6xl">
+      <div className="w-full max-w-full px-[100px]">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
           {[...Array(6)].map((_, index) => (
             <div

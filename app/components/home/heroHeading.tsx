@@ -15,9 +15,9 @@ function HeroHeading() {
         </p>
         <a
           href="#"
-          className="inline-block bg-blue-600 text-white font-semibold px-6 py-3 rounded-lg hover:bg-blue-700 transition duration-300"
+          className=" bg-[#EACB32] text-black-500 font-semibold h-[60px] w-[200px] rounded-lg hover:bg-blue-700 transition duration-300 flex flex-col justify-center items-center "
         >
-          Learn More
+          Request a Quote
         </a>
       </div>
     </div>
