@@ -15,7 +15,7 @@ function HeroHeading() {
         </p>
         <a
           href="#"
-          className=" bg-[#EACB32] text-black-500 font-semibold h-[60px] w-[200px] rounded-lg hover:bg-blue-700 transition duration-300 flex flex-col justify-center items-center "
+          className=" bg-[#EACB32] text-black-500 font-semibold h-[60px] w-[200px] rounded-lg hover:bg-blue-700 mt-[48px] transition duration-300 flex flex-col justify-center items-center "
         >
           Request a Quote
         </a>

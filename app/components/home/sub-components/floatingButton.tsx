@@ -22,7 +22,7 @@ export default function FloatingButton() {
   }
 
   return (
-    <div className="fixed bottom-4 right-[200px] z-50 mr-11">
+    <div className="fixed bottom-4 right-16 z-50 mr-11">
       <div className="flex flex-col items-center justify-center space-y-4">
         <a
           href="https://www.buymeacoffee.com/yourusername"

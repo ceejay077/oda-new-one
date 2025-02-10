@@ -16,7 +16,7 @@ export default function Awards() {
       </div>
 
       {/* First section - Grid on mobile, inline on larger screens */}
-      <div className="mt-16 max-w-6xl mx-auto px-4">
+      <div className="mt-16 max-w-full mx-auto px-20">
         <div className="grid grid-rows-2 grid-cols-3 md:grid-rows-none md:flex md:justify-between md:items-center gap-4 sm:gap-8">
           {[...Array(6)].map((_, index) => (
             <div key={index} className="flex items-center justify-center">

@@ -4,12 +4,12 @@ import Figures from "./sub-components/aboutFigurs";
 export default function about() {
   return (
     <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-full  mx-[200px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content Section */}
           <div className="order-2 lg:order-1">
             <div className="max-w-xl mx-auto lg:mx-0">
-              <h2 className="hidden sm:block text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="hidden sm:block text-3xl sm:text-4xl font-normal text-gray-900 mb-6">
                 About ODA
               </h2>
 

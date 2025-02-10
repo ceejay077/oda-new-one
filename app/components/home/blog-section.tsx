@@ -45,7 +45,7 @@ export default function BlogSection() {
   };
 
   return (
-    <div className="mt-24 mx-auto max-w-7xl px-4">
+    <div className="mt-24  max-w-full px-4 mx-[200px]">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-3xl sm:text-4xl xl:text-5xl font-normal text-gray-900 dark:text-sectionTitle">
           Latest News from ODA
@@ -56,7 +56,7 @@ export default function BlogSection() {
       </div>
 
       <div className="relative w-full flex justify-center">
-        <div className="w-full max-w-7xl lg:p-10 sm:p-1 md:px-20 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="w-full max-w-full lg:pt-10 sm:p-1 md:px-0 grid grid-cols-1 lg:grid-cols-3 gap-6">
           {posts
             .slice(currentIndex, currentIndex + itemsPerPage)
             .map((post, index) => (
@@ -65,7 +65,7 @@ export default function BlogSection() {
                 className="bg-white rounded-lg shadow-md overflow-hidden"
               >
                 <img
-                  className="w-full h-60 object-cover"
+                  className="w-[464px] h-[400px] object-cover"
                   src={post.image}
                   alt={post.title}
                 />

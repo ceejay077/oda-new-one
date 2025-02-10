@@ -48,13 +48,13 @@ export default function Home() {
       <div>
         <OurServices />
       </div>
-      <div className="px-[200px]">
+      <div className="px-[150px]">
         <Tesimonials />
       </div>
       <div>
         <Awards />
       </div>
-      <div>
+      <div className="px-[200px]">
         <Logos />
       </div>
       <div className=" sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">

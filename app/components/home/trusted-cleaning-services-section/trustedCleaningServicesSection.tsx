@@ -10,7 +10,7 @@ function TrustedCleaningServices() {
             <div className="rounded-lg">
               <div className="block sm:hidden">
                 <div className="text-center my-8">
-                  <h1 className="text-sm">Trusted Cleaning Experts</h1>
+                  <h1 className="text-4xl">Trusted Cleaning Experts</h1>
                 </div>
               </div>
             </div>
@@ -27,10 +27,12 @@ function TrustedCleaningServices() {
         <div className="w-full sm:w-1/2  sm:mr-48">
           <div className="p-3 sm:p-5 pt-8    relative  ">
             <div className="hidden sm:block">
-              <div className="text-center my-8">
-                <h1 className="text-4xl text-left">Trusted Cleaning Experts</h1>
+              <div className="text-center text-sectionTitle">
+                <h1 className="text-[56px] text-left">
+                  Trusted Cleaning Experts
+                </h1>
               </div>
-              <div className="text-left my-12">
+              <div className="text-left text-titleDescription">
                 Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                 vulputate libero et velit interdum, ac aliquet odio mattis.
               </div>
@@ -41,7 +43,7 @@ function TrustedCleaningServices() {
                 {/* ----------------------------------------------------------------------------------------------------------------------- */}
                 <a
                   href="#"
-                  className="relative block p-9 sm:p-9 m-8 rounded-xl border border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
+                  className="relative block p-9 sm:p-9 m-8 rounded-xl shadow-md border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
                 >
                   <div className="flex flex-col items-center justify-center w-full mb-4 space-y-2">
                     {/* Using a placeholder image since external images aren't supported */}
@@ -88,7 +90,7 @@ function TrustedCleaningServices() {
 
                 <a
                   href="#"
-                  className="relative block p-9 sm:p-9 m-8 rounded-xl border border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
+                  className="relative block p-9 sm:p-9 m-8 rounded-xl shadow-md border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
                 >
                   <div className="flex flex-col items-center justify-center w-full mb-4 space-y-2">
                     {/* Using a placeholder image since external images aren't supported */}
@@ -120,7 +122,7 @@ function TrustedCleaningServices() {
 
                 <a
                   href="#"
-                  className="relative block p-9 sm:p-9 m-8 rounded-xl border border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
+                  className="relative block p-9 sm:p-9 m-8 rounded-xl shadow-md border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
                 >
                   <div className="flex flex-col items-center justify-center w-full mb-4 space-y-2">
                     {/* Using a placeholder image since external images aren't supported */}

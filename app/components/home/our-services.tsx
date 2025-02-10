@@ -67,10 +67,10 @@ function OurServices() {
                   </h3>
                 </div>
               </div>
-              <div className="p-6">
+              <div className="pt-6">
                 <p className="text-gray-600 text-sm">{service.description}</p>
                 <div className="mt-4">
-                  <button className="inline-flex items-center px-4 py-2 text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
+                  <button className="inline-flex items-center px-0 py-2 text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
                     View Service
                     <svg
                       className="ml-2 w-4 h-4"
