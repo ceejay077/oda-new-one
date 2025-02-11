@@ -3,8 +3,8 @@ import Figures from "./sub-components/aboutFigurs";
 
 export default function about() {
   return (
-    <div className="min-h-screen bg-white py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-full  mx-[200px]">
+    <div className="min-h-screen bg-white">
+      <div className="w-full max-w-full  px-[200px]">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content Section */}
           <div className="order-2 lg:order-1">

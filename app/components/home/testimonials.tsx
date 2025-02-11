@@ -2,13 +2,13 @@ import React from "react";
 
 function Testimonials() {
   return (
-    <div>
+    <div className="w-full max-w-full px-[200px]">
       <section
         id="testimonials"
         aria-label="What our customers are saying"
-        className="bg-white pt-[300px]  min-h-screen"
+        className="bg-white"
       >
-        <div className="mx-auto max-w-full px-4 sm:px-6 lg:px-8 ">
+        <div className="mx-auto max-w-full">
           <div className="mx-auto max-w-screen r text-left">
             <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl mb-5">
               Client Stories of Satisfaction

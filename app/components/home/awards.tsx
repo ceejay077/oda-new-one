@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Awards() {
   return (
-    <div className="px-4 sm:px-8 lg:px-16 xl:px-32 py-16">
+    <div className="w-full max-w-full px-[200px]">
       <div className="text-center">
         <h2 className="text-3xl sm:text-4xl xl:text-5xl text-gray-900 dark:text-sectionTitle">
           Awards & Certifications
@@ -16,7 +16,7 @@ export default function Awards() {
       </div>
 
       {/* First section - Grid on mobile, inline on larger screens */}
-      <div className="mt-16 max-w-full mx-auto px-20">
+      <div className="">
         <div className="grid grid-rows-2 grid-cols-3 md:grid-rows-none md:flex md:justify-between md:items-center gap-4 sm:gap-8">
           {[...Array(6)].map((_, index) => (
             <div key={index} className="flex items-center justify-center">

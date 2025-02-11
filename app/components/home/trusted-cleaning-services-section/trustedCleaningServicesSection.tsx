@@ -38,12 +38,12 @@ function TrustedCleaningServices() {
               </div>
             </div>
 
-            <div className="max-w-5xl mx-auto">
+            <div className="max-w-5xl mx-auto mt-10">
               <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-5 not-prose">
                 {/* ----------------------------------------------------------------------------------------------------------------------- */}
                 <a
                   href="#"
-                  className="relative block p-9 sm:p-9 m-8 rounded-xl shadow-md border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
+                  className="relative block p-9 sm:p-9 rounded-xl shadow-md border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
                 >
                   <div className="flex flex-col items-center justify-center w-full mb-4 space-y-2">
                     {/* Using a placeholder image since external images aren't supported */}
@@ -90,7 +90,7 @@ function TrustedCleaningServices() {
 
                 <a
                   href="#"
-                  className="relative block p-9 sm:p-9 m-8 rounded-xl shadow-md border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
+                  className="relative block p-9 sm:p-9 rounded-xl shadow-md border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
                 >
                   <div className="flex flex-col items-center justify-center w-full mb-4 space-y-2">
                     {/* Using a placeholder image since external images aren't supported */}
@@ -122,7 +122,7 @@ function TrustedCleaningServices() {
 
                 <a
                   href="#"
-                  className="relative block p-9 sm:p-9 m-8 rounded-xl shadow-md border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
+                  className="relative block p-9 sm:p-9 rounded-xl shadow-md border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
                 >
                   <div className="flex flex-col items-center justify-center w-full mb-4 space-y-2">
                     {/* Using a placeholder image since external images aren't supported */}

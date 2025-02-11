@@ -45,7 +45,7 @@ export default function SuccessWorks() {
   };
 
   return (
-    <div className="mt-24  max-w-full py-32 mx-[200px]">
+    <div className="w-full max-w-full px-[200px]">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-3xl sm:text-4xl xl:text-5xl font-normal text-gray-900 dark:text-sectionTitle">
           Our Success Works
@@ -65,7 +65,7 @@ export default function SuccessWorks() {
                 className="bg-white rounded-lg shadow-md overflow-hidden"
               >
                 <img
-                  className="w-[464px] h-[400px] object-cover"
+                  className="object-cover w-full"
                   src={post.image}
                   alt={post.title}
                 />

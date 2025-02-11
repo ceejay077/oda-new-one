@@ -48,28 +48,37 @@ export default function Home() {
       <div>
         <OurServices />
       </div>
-      <div className="px-[150px]">
+
+      <div className="section-100 flex flex-col justify-center item-center">
         <Tesimonials />
       </div>
-      <div>
+
+      <div className="section-100 flex flex-col justify-center item-center">
         <Awards />
-      </div>
-      <div className="px-[200px]">
         <Logos />
       </div>
+
+      {/* <div className="px-[200px]">
+        <Logos />
+      </div> */}
+
       <div className=" sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">
         <Logos_copy />
       </div>
-      <div>
+
+      <div className="section-100 flex flex-col justify-center item-center">
         <SuccessWorks />
       </div>
+
       <div>
         <CallToAction />
       </div>
       {/* -------------------------------------- */}
-      <div className="mb-10">
+
+      <div className="section-100 flex flex-col justify-center item-center">
         <BlogSection />
       </div>
+
       <div className=" sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">
         <Form />
       </div>

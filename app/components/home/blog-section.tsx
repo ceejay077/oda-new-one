@@ -45,7 +45,7 @@ export default function BlogSection() {
   };
 
   return (
-    <div className="mt-24  max-w-full px-4 mx-[200px]">
+    <div className="w-full max-w-full px-[200px]">
       <div className="flex justify-between items-center mb-6">
         <h2 className="text-3xl sm:text-4xl xl:text-5xl font-normal text-gray-900 dark:text-sectionTitle">
           Latest News from ODA
