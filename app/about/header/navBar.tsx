@@ -12,7 +12,7 @@ const ResponsiveHeader = () => {
     { href: "/services-category", label: "Services" },
     { href: "#", label: "Our Works" },
     { href: "/certificates", label: "Certificates" },
-    { href: "#", label: "News" },
+    { href: "/news", label: "News" },
     { href: "/careers", label: "Careers" },
   ];
 
