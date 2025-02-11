@@ -12,6 +12,7 @@ export default function Careers() {
       <HeroCareers />
       <WhyChooseUsCareers />
       <JobOpeningsGrid />
+      <div>heloo</div>
     </div>
   );
 }

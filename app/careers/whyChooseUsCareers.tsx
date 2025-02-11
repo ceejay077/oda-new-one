@@ -3,7 +3,7 @@ import WhyChosseUsGrid from "../services-category/services-category-sub-componen
 
 export default function WhyChooseUsCareers() {
   return (
-    <div className="flex flex-col justify-center lg:flex-row bg-white mb-[200px] min-h-screen max-h-screen text-black">
+    <div className="flex flex-col justify-center lg:flex-row bg-white mb-[200px] min-h-screen max-h-screen text-black max-w-full px-[160px]">
       {/* Left Section */}
       <div className="max-w-screen-md w-full px-4 sm:px-8 lg:mr-10 mt-8 md:mt-12 lg:mt-16">
         <WhyChosseUsGrid title="Why Work With Us" />
