@@ -2,9 +2,9 @@ import React from "react";
 
 function AboutSectionGrid() {
   return (
-    <div className="flex flex-row justify-center items-center">
-      <div className="w-3/4 h-auto">
-        <div className="grid   gap-4 h-full">
+    <div className="flex flex-row div-end">
+      <div className="w-full h-auto">
+        <div className="grid gap-4 h-full">
           <div>
             <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 lg:grid-cols-2">
               <a

@@ -36,7 +36,7 @@ const Team = () => {
 
   return (
     <div className="py-32 bg-white">
-      <div className="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between">
+      <div className="flex flex-col sm:flex-row justify-between w-full max-w-full px-[200px]">
         {/* Text Content - Now on the left */}
         <div className="text-left mb-10 sm:mr-10 md:mr-24 sm:w-6/12">
           <h3 className="text-3xl sm:text-5xl leading-normal font-normal tracking-tight text-gray-900">
@@ -62,12 +62,12 @@ const Team = () => {
         <div className="w-8/12">
           <ul className="grid grid-cols-3 gap-5 ">
             {teamMembers.map((member, index) => (
-              <li key={index} className="bg-gray-100  text-center">
+              <li key={index} className="text-center">
                 <div className="flex flex-col items-center">
                   <div className="flex-shrink-0">
                     <a href="#">
                       <img
-                        className="mb-3 rounded-sm mx-auto h-48 w-auto"
+                        className="mb-3 rounded-sm mx-auto w-auto"
                         src={member.image}
                         alt={member.name}
                       />
