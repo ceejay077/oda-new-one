@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "./header";
-import Logos from "./logos";
+// import Logos from "./logos";
 import HeroHeading from "./heroHeading";
 
 const Hero = () => {
