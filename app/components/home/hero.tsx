@@ -7,7 +7,15 @@ const Hero = () => {
   return (
     <div className="relative">
       <div className="h-screen flex flex-col justify-between items-end">
-        <div className="w-full h-full bg-[url('/images/hero-image.png')] bg-center bg-cover bg-no-repeat relative">
+        <div className="w-full h-full">
+          <video
+            className="absolute top-0 left-0 w-full h-full object-cover"
+            src="/videos/oda-introduction.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+          />
           {/* Background overlay */}
           <div className="absolute inset-0 bg-black bg-opacity-60 z-10"></div>
           {/* Header Section */}
