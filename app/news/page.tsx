@@ -1,4 +1,5 @@
 import Banner from "../components/home/banner";
+import ResponsiveHeader from "../about/header/navBar";
 import NewsHero from "./newsHero";
 import LatestNewsGrid from "./latestNewsFromODA";
 import NewsGrid from "./newsGrid";
@@ -10,6 +11,7 @@ export default function News() {
   return (
     <div>
       <Banner />
+      <ResponsiveHeader />
       <NewsHero />
       <LatestNewsGrid />
       <NewsGrid />
