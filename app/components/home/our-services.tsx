@@ -70,22 +70,24 @@ function OurServices() {
               <div className="pt-6">
                 <p className="text-gray-600 text-sm">{service.description}</p>
                 <div className="mt-4">
-                  <button className="inline-flex items-center px-0 py-2 text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
-                    View Service
-                    <svg
-                      className="ml-2 w-4 h-4"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
-                      />
-                    </svg>
-                  </button>
+                  <a href="/service-inner">
+                    <button className="inline-flex items-center px-0 py-2 text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
+                      View Service
+                      <svg
+                        className="ml-2 w-4 h-4"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M9 5l7 7-7 7"
+                        />
+                      </svg>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>

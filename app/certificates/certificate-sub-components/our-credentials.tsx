@@ -1,5 +1,5 @@
 import React from "react";
-import Figures from "../../components/home/sub-components/aboutFigurs";
+// import Figures from "../../components/home/sub-components/aboutFigurs";
 
 export default function OurCredentials() {
   return (

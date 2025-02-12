@@ -1,5 +1,5 @@
 import React from "react";
-import AdditionalServiceGrid from "../about/about-sub-component/additionalGrid";
+// import AdditionalServiceGrid from "../about/about-sub-component/additionalGrid";
 
 export default function AdditionalServices() {
   return (
