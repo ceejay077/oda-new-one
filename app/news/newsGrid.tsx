@@ -367,6 +367,11 @@ export default function NewsGrid() {
           </div>
         </div>
       </div>
+      <div className="flex justify-center mt-[48px]">
+        <button className="bg-blue-900 text-white w-[200px] h-[60px] rounded-[8px]">
+          Learn More
+        </button>
+      </div>
     </div>
   );
 }
