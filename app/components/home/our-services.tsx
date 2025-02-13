@@ -113,6 +113,12 @@ function OurServices() {
           ))}
         </div>
 
+        <div className="flex flex-row justify-center">
+          <button className="bg-[#27479B] w-[200px] h-[60px] rounded-[8px] text-white">
+            Learn More
+          </button>
+        </div>
+
         {/* Navigation Section - Positioned below grid */}
         <div className="flex items-center justify-between px-1">
           {/* Dots */}

@@ -27,7 +27,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/about/legacySlider.jsx"
+    "app/about/legacySlider.jsx",
+    "app/services-category/services-category-sub-components/whyChooseUsGrid.jsx"
   ],
   "exclude": ["node_modules"]
 }
