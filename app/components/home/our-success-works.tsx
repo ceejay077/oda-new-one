@@ -22,6 +22,24 @@ const posts = [
     description:
       "Keeping retail and shopping centers spotless to enhance customer experience and maintain high standards.",
   },
+  {
+    title: "Retail and Shopping Centers Cleaning Excellence",
+    image: "/images/homePage/success-works/3.png",
+    description:
+      "Keeping retail and shopping centers spotless to enhance customer experience and maintain high standards.",
+  },
+  {
+    title: "Restaurant and Pub Cleaning Success",
+    image: "/images/homePage/success-works/2.png",
+    description:
+      "Our team has transformed restaurants and pubs with top-tier cleaning services, ensuring compliance and customer satisfaction.",
+  },
+  {
+    title: "ODA Achieves 200+ Happy Clients Milestone!",
+    image: "/images/homePage/success-works/1.png",
+    description:
+      "One Direction Australia proudly announces reaching over 200 satisfied clients, a testament to their exceptional commercial cleaning services.",
+  },
 ];
 
 export default function SuccessWorks() {
@@ -60,10 +78,7 @@ export default function SuccessWorks() {
           {posts
             .slice(currentIndex, currentIndex + itemsPerPage)
             .map((post, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
-              >
+              <div key={index} className="bg-white rounded-lg overflow-hidden">
                 <img
                   className="object-cover w-full"
                   src={post.image}

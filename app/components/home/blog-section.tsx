@@ -22,6 +22,19 @@ const posts = [
     description:
       "Keeping retail and shopping centers spotless to enhance customer experience and maintain high standards.",
   },
+
+  {
+    title: "Restaurant and Pub Cleaning Success",
+    image: "/images/homePage/success-works/2.png",
+    description:
+      "Our team has transformed restaurants and pubs with top-tier cleaning services, ensuring compliance and customer satisfaction.",
+  },
+  {
+    title: "Retail and Shopping Centers Cleaning Excellence",
+    image: "/images/homePage/success-works/3.png",
+    description:
+      "Keeping retail and shopping centers spotless to enhance customer experience and maintain high standards.",
+  },
 ];
 
 export default function BlogSection() {
@@ -60,10 +73,7 @@ export default function BlogSection() {
           {posts
             .slice(currentIndex, currentIndex + itemsPerPage)
             .map((post, index) => (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-md overflow-hidden"
-              >
+              <div key={index} className="bg-white rounded-lg  overflow-hidden">
                 <img
                   className="w-[464px] h-[400px] object-cover"
                   src={post.image}

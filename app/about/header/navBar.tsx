@@ -24,7 +24,7 @@ const ResponsiveHeader = () => {
           <Image
             src="/images/oda_logo.png"
             alt="Description"
-            className="h-16 md:h-20 w-auto"
+            className="h-16 md:h-20 w-auto pl-[100px]"
             width={100}
             height={100}
           />

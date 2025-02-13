@@ -75,15 +75,15 @@ const FAQSection: React.FC = () => {
         return (
           <div
             key={actualIndex}
-            className="bg-white rounded-lg overflow-hidden"
+            className="bg-white rounded-lg overflow-hidden shadow-md"
           >
             <button
               type="button"
               onClick={() => toggleQuestion(actualIndex)}
-              className="flex items-center justify-between w-full p-4 text-left hover:bg-gray-50"
+              className="flex items-center justify-between w-full p-9 text-left hover:bg-gray-50 "
             >
               <span className="text-base text-gray-900">{faq.question}</span>
-              <span className="flex items-center justify-center w-6 h-6 bg-yellow-400 rounded">
+              <span className="flex items-center justify-center w-6 h-6 bg-yellow-400 rounded ">
                 {openIndex === actualIndex ? (
                   <Minus className="w-4 h-4 text-black" />
                 ) : (

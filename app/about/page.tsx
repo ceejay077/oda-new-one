@@ -8,11 +8,15 @@ import AdditionalServices from "../about/additionalInformation";
 import CallToAction from "../components/home/book-your-appoinment";
 import FAQSection from "../about/faq";
 import Footer from "../components/home/footer";
+import FloatingButton from "../components/home/sub-components/floatingButton";
+import BackToTop from "../components/backToTop";
 
 export default function AboutPage() {
   return (
     <div>
       <Banner />
+      <FloatingButton />
+      <BackToTop />
       <NavBar />
       <HeroAbout />
       <AboutPageAboutSection />

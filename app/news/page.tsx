@@ -6,11 +6,15 @@ import NewsGrid from "./newsGrid";
 import CallToAction from "../components/home/book-your-appoinment";
 import Testimonials from "../components/home/testimonials";
 import Footer from "../components/home/footer";
+import FloatingButton from "../components/home/sub-components/floatingButton";
+import BackToTop from "../components/backToTop";
 
 export default function News() {
   return (
     <div>
       <Banner />
+      <FloatingButton />
+      <BackToTop />
       <ResponsiveHeader />
       <NewsHero />
       <LatestNewsGrid />

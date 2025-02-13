@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 
 const serviceData = [
   {
@@ -33,6 +34,23 @@ const serviceData = [
 ];
 
 function OurServices() {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const slidesPerView = 3;
+  const totalSlides = Math.ceil(serviceData.length / slidesPerView);
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % totalSlides);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + totalSlides) % totalSlides);
+  };
+
+  const getVisibleServices = () => {
+    const start = currentSlide * slidesPerView;
+    return serviceData.slice(start, start + slidesPerView);
+  };
+
   return (
     <div className="flex flex-col items-center mt-11 lg:mt-32">
       {/* Title and Description Section */}
@@ -46,19 +64,22 @@ function OurServices() {
         </p>
       </div>
 
-      {/* Grid Section */}
-      <div className="w-full max-w-full  px-[200px]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-[64px]">
-          {serviceData.map((service, index) => (
+      {/* Navigation Container */}
+      <div className="w-full max-w-[1400px] px-4">
+        {/* Slider Section */}
+        <div className="flex justify-between gap-8 mb-8">
+          {getVisibleServices().map((service, index) => (
             <div
-              key={index}
-              className="group bg-white rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02]"
+              key={index + currentSlide * slidesPerView}
+              className="group bg-white rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] flex-1"
             >
-              <div className="relative h-[400px] w-[464px]">
+              <div className="relative h-[400px]">
                 <img
                   alt={service.title}
                   className="w-full h-full object-cover"
-                  src={`/images/homePage/our-services/${index + 1}.png`}
+                  src={`/images/homePage/our-services/${index +
+                    1 +
+                    currentSlide * slidesPerView}.png`}
                 />
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent">
@@ -90,6 +111,65 @@ function OurServices() {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* Navigation Section - Positioned below grid */}
+        <div className="flex items-center justify-between px-1">
+          {/* Dots */}
+          <div className="flex gap-2">
+            {Array.from({ length: totalSlides }).map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-2 h-2 rounded-full transition-colors ${
+                  currentSlide === index ? "bg-yellow-500" : "bg-gray-300"
+                }`}
+                aria-label={`Go to slide ${index + 1}`}
+              />
+            ))}
+          </div>
+
+          {/* Navigation Buttons */}
+          <div className="flex gap-2">
+            <button
+              onClick={prevSlide}
+              className="bg-yellow-500 text-white p-4 rounded hover:bg-yellow-600 transition-colors"
+              aria-label="Previous slide"
+            >
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M15 19l-7-7 7-7"
+                />
+              </svg>
+            </button>
+            <button
+              onClick={nextSlide}
+              className="bg-yellow-500 text-white p-4 rounded hover:bg-yellow-600 transition-colors"
+              aria-label="Next slide"
+            >
+              <svg
+                className="w-4 h-4"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </button>
+          </div>
         </div>
       </div>
     </div>

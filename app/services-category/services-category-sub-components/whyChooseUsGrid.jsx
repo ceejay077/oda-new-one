@@ -4,7 +4,7 @@ export default function WhyChosseUsGrid(props) {
   return (
     <div className="flex flex-col">
       <div>
-        <h1 className="text-6xl my-5">{props.title}</h1>
+        <h1 className="text-6xl font-thin my-5">{props.title}</h1>
         <p className="my-5">
           Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis.

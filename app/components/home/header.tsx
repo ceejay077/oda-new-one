@@ -17,14 +17,14 @@ const ResponsiveWhiteHeader = () => {
 
   return (
     <div className="w-full relative">
-      <div className="bg-white backdrop-blur-sm bg-opacity-5 px-4 md:px-6 flex flex-wrap items-center justify-between w-full">
+      <div className="bg-white backdrop-blur-sm bg-opacity-5 pl-[100px] flex flex-wrap items-center justify-between w-full">
         {/* Logo Section */}
         <div className="flex items-center ">
-          <div className="lg:pl-0 md:pl-6 sm:ml-28">
+          <div className=" ">
             <img
               src="/images/oda_logo.png"
               alt="Description"
-              className="h-[120px]  w-[204.03px]"
+              className="h-[120px]  w-[204.03px] "
             />
           </div>
         </div>
