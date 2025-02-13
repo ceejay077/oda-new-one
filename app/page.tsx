@@ -11,7 +11,7 @@ import Footer from "./components/home/footer";
 import Tesimonials from "./components/home/testimonials";
 import TrustedCleaningServices from "./components/home/trusted-cleaning-services-section/trustedCleaningServicesSection";
 import Logos from "./components/home/logos";
-import Form from "./components/home/form";
+// import Form from "./components/home/form";
 import SuccessWorks from "./components/home/our-success-works";
 import BackToTop from "./components/backToTop";
 
@@ -77,9 +77,9 @@ export default function Home() {
         <BlogSection />
       </div>
 
-      <div className=" sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">
+      {/* <div className=" sm:block md:hidden lg:hidden xl:hidden 2xl:hidden">
         <Form />
-      </div>
+      </div> */}
       <div>
         <Footer />
       </div>
