@@ -16,7 +16,7 @@ const ResponsiveWhiteHeader = () => {
   ];
 
   return (
-    <div className="w-full relative">
+    <div className="w-full relative ">
       <div className="bg-white backdrop-blur-sm bg-opacity-5 pl-[100px] flex flex-wrap items-center justify-between w-full">
         {/* Logo Section */}
         <div className="flex items-center ">

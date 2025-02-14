@@ -23,54 +23,55 @@ export default function Home() {
       </div>
 
       <BackToTop />
-
-      <div className="h-screen overflow-y-auto snap-y snap-mandatory">
-        <div className="hidden sm:hidden md:block lg:block xl:block 2xl:block snap-start">
-          <Banner />
-        </div>
-        {/* -------------------------------- */}
-        <div className="snap-start">
-          <Hero />
-        </div>
-        <div className="snap-start mb-[100px]">
-          <Logos />
-        </div>
-        {/* -------------------------------- */}
-        <div className="sm:block md:hidden lg:hidden xl:hidden 2xl:hidden snap-start">
-          <Logos_copy />
-        </div>
-        {/* -------------------------------- */}
-        <div className="snap-start">
-          <TrustedCleaningServices />
-        </div>
-        <div className="sm:mt-5 lg:mt-40 snap-start">
-          <About />
-        </div>
-        <div className="snap-start">
-          <OurServices />
-        </div>
-        <div className="section-100 flex flex-col justify-center item-center snap-start">
-          <Tesimonials />
-        </div>
-        <div className="section-100 flex flex-col justify-center item-center snap-start">
-          <Awards />
-          <Logos />
-        </div>
-        <div className="sm:block md:hidden lg:hidden xl:hidden 2xl:hidden snap-start">
-          <Logos_copy />
-        </div>
-        <div className="section-100 flex flex-col justify-center item-center snap-start">
-          <SuccessWorks />
-        </div>
-        <div className="snap-start">
-          <CallToAction />
-        </div>
-        {/* -------------------------------------- */}
-        <div className="section-100 flex flex-col justify-center item-center snap-start">
-          <BlogSection />
-        </div>
-        <div className="snap-start">
-          <Footer />
+      <div className="scroll-container">
+        <div className="h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth">
+          <div className="hidden sm:hidden md:block lg:block xl:block 2xl:block snap-start">
+            <Banner />
+          </div>
+          {/* -------------------------------- */}
+          <div className="snap-start">
+            <Hero />
+          </div>
+          <div className="snap-start mb-[100px]">
+            <Logos />
+          </div>
+          {/* -------------------------------- */}
+          <div className="sm:block md:hidden lg:hidden xl:hidden 2xl:hidden snap-start">
+            <Logos_copy />
+          </div>
+          {/* -------------------------------- */}
+          <div className="snap-start">
+            <TrustedCleaningServices />
+          </div>
+          <div className="sm:mt-5 lg:mt-40 snap-start">
+            <About />
+          </div>
+          <div className="snap-start">
+            <OurServices />
+          </div>
+          <div className="section-100 flex flex-col justify-center item-center snap-start">
+            <Tesimonials />
+          </div>
+          <div className="section-100 flex flex-col justify-center item-center snap-start">
+            <Awards />
+            <Logos />
+          </div>
+          <div className="sm:block md:hidden lg:hidden xl:hidden 2xl:hidden snap-start">
+            <Logos_copy />
+          </div>
+          <div className="section-100 flex flex-col justify-center item-center snap-start">
+            <SuccessWorks />
+          </div>
+          <div className="snap-start">
+            <CallToAction />
+          </div>
+          {/* -------------------------------------- */}
+          <div className="section-100 flex flex-col justify-center item-center snap-start">
+            <BlogSection />
+          </div>
+          <div className="snap-start">
+            <Footer />
+          </div>
         </div>
       </div>
     </>

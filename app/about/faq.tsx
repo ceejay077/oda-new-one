@@ -106,7 +106,7 @@ const FAQSection: React.FC = () => {
   );
 
   return (
-    <div>
+    <div className="w-full max-w-full px-[200px]">
       <div className="flex justify-center items-center flex-col">
         <h1 className="text-4xl my-5 font-sans font-normal">FAQs</h1>
         <p className="w-2/5 text-center text-gray-600">

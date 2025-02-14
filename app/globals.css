@@ -15,3 +15,16 @@
   padding-left: 200px;
   padding-right: 30px;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-container {
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.about-left-img {
+  background-image: url(https://oda-7needle.netlify.app/images/about/additional-info.png);
+}

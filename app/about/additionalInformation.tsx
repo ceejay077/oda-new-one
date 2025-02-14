@@ -5,8 +5,8 @@ export default function AdditionalServices() {
   return (
     <div className="flex flex-col lg:flex-row bg-white mb-[160px] min-h-screen max-h-screen text-black">
       {/* Left Section */}
-      <div className="bg-white text-black flex justify-center max-h-screen w-full lg:w-1/2">
-        <div className="max-w-screen mx-auto py-8 lg:py-16 bg-white px-4 sm:px-8">
+      <div className="bg-white text-black flex justify-center">
+        <div className="max-w-screen mx-auto">
           <div className="flex flex-col w-full">
             {/* Can Help Image */}
             <div className="mb-6 lg:mb-0">
