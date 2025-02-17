@@ -3,7 +3,7 @@ import React from "react";
 
 export default function AdditionalServices() {
   return (
-    <div className="flex flex-col lg:flex-row bg-white mb-[160px] min-h-screen max-h-screen text-black">
+    <div className="flex flex-col lg:flex-row bg-white   text-black">
       {/* Left Section */}
       <div className="bg-white text-black flex justify-center">
         <div className="max-w-screen mx-auto">
@@ -22,7 +22,7 @@ export default function AdditionalServices() {
       </div>
 
       {/* Right Section */}
-      <div className="w-full sm:w-1/2  sm:mr-48">
+      <div className="w-full sm:w-1/2  sm:mr-48 flex flex-col justify-center">
         <div className="p-3 sm:p-5 pt-8    relative  ">
           <div className="hidden sm:block">
             <div className="text-center text-sectionTitle">

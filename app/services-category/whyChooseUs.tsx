@@ -22,7 +22,7 @@ export default function WhyChooseUs() {
       </div>
 
       {/* Right Section */}
-      <div className="max-w-screen-md w-full px-4 sm:px-8 lg:mr-10 mt-8 md:mt-12 lg:mt-16">
+      <div className="max-w-screen-md w-full px-4 sm:px-8 lg:mr-10 mt-8 md:mt-12 lg:mt-16 flex flex-col justify-center">
         <WhyChosseUsGrid title="Why Choose Us?" />
       </div>
     </div>
