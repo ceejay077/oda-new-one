@@ -1,5 +1,21 @@
 import React from "react";
 import Figures from "./sub-components/aboutFigurs";
+import { Montserrat, Inter } from "next/font/google";
+
+const montserratfont = Montserrat({
+  subsets: ["latin"],
+  weight: "500",
+});
+
+const montserratfont600 = Montserrat({
+  subsets: ["latin"],
+  weight: "500",
+});
+
+const interfont = Inter({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 export default function about() {
   return (
@@ -9,18 +25,24 @@ export default function about() {
           {/* Content Section */}
           <div className="order-2 lg:order-1">
             <div className="max-w-xl mx-auto lg:mx-0">
-              <h2 className="hidden sm:block text-3xl sm:text-4xl font-normal text-gray-900 mb-6">
+              <h2
+                className={`hidden sm:block text-[56px] font-normal text-gray-900 mb-6 ${montserratfont.className}`}
+              >
                 About ODA
               </h2>
 
-              <p className="text-gray-400 mb-8">
+              <p
+                className={`text-titleDescription mb-8 text-[18px] ${interfont.className} `}
+              >
                 One Direction Australia (ODA) is a leading commercial cleaning
                 company established in 2007, dedicated to addressing industry
                 challenges with professionalism and integrity.
               </p>
 
               {/* Features List */}
-              <ul className="space-y-4 mb-12">
+              <ul
+                className={`space-y-4 mb-12 text-titleDescription text-[18px] ${interfont.className}`}
+              >
                 {[
                   "Over 15 years of industry experience.",
                   "A well-recognized name in commercial cleaning.",
@@ -55,11 +77,17 @@ export default function about() {
               {/* Stats Section */}
               <div className="grid grid-cols-2 gap-8 mb-8">
                 <Figures />
-                <div className="flex flex-col items-center lg:items-start">
-                  <div className="font-semibold text-4xl text-indigo-800 dark:text-blue-400 mb-1">
+                <div className="flex flex-col items-center lg:items-start ml-[200px]">
+                  <div
+                    className={`font-semibold text-[56px] text-indigo-800 dark:text-blue-400 mb-1   ${montserratfont.className}`}
+                  >
                     500+
                   </div>
-                  <span className="text-lg text-gray-900">projects</span>
+                  <span
+                    className={`${montserratfont600.className} font-medium text-lg text-gray-900`}
+                  >
+                    projects
+                  </span>
                 </div>
               </div>
 

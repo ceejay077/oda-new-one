@@ -1,6 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Inter, Montserrat } from "next/font/google";
+
+const interfont = Inter({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const ResponsiveWhiteHeader = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,7 +36,7 @@ const ResponsiveWhiteHeader = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="flex md:hidden">
+        <div className={`flex md:hidden `}>
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="p-2 text-white hover:text-blue-500"
@@ -51,7 +57,7 @@ const ResponsiveWhiteHeader = () => {
               <li key={link.label} className="mx-2">
                 <a
                   href={link.href}
-                  className="text-white hover:text-blue-500 text-sm lg:text-base transition-colors"
+                  className={`text-white hover:text-blue-500 text-sm lg:text-base transition-colors ${interfont.className}`}
                 >
                   {link.label}
                 </a>
@@ -63,7 +69,7 @@ const ResponsiveWhiteHeader = () => {
         {/* Contact Us Button */}
         <div className="hidden md:flex items-center h-32 px-4 md:px-9">
           <a
-            className="px-6 lg:px-12 min-h-[60px] min-w-[200px] text-center text-white border border-white rounded-[8px] hover:bg-gray-600 transition-colors active:bg-gray-700 focus:outline-none focus:ring focus:ring-white/50 flex flex-col justify-center"
+            className={`px-6 text-[18px] lg:px-12 min-h-[60px] min-w-[200px] text-center text-white border border-white rounded-[8px] hover:bg-gray-600 transition-colors active:bg-gray-700 focus:outline-none focus:ring focus:ring-white/50 flex flex-col justify-center ${interfont.className}`}
             href="/download"
           >
             Contact Us
@@ -82,7 +88,7 @@ const ResponsiveWhiteHeader = () => {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="block py-2 text-white hover:text-blue-500 transition-colors"
+                    className={`block py-2 text-white hover:text-blue-500 transition-colors text-[18px] ${interfont.className}`}
                     onClick={() => setIsMenuOpen(false)}
                   >
                     {link.label}
@@ -93,7 +99,7 @@ const ResponsiveWhiteHeader = () => {
           </nav>
           <div className="px-4 py-4 border-t border-white/10">
             <a
-              className="block w-full py-2 text-center text-white border border-white rounded hover:bg-gray-600 transition-colors"
+              className={`block w-full py-2 text-center text-white border border-white rounded hover:bg-gray-600 text-[18px] transition-colors ${interfont.className}`}
               href="/download"
             >
               Contact Us
@@ -106,65 +112,3 @@ const ResponsiveWhiteHeader = () => {
 };
 
 export default ResponsiveWhiteHeader;
-
-// on this mobile menu should be bring front of the screen by z index.  and for the mobile version please bring logo to the middle : "use client";
-// import React, { useState } from "react";
-// import { Menu, X } from "lucide-react";
-
-// const ResponsiveWhiteHeader = () => {
-//   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-//   const navigationLinks = [
-//     { href: "/", label: "Home" },
-//     { href: "/about", label: "About Us" },
-//     { href: "/services-category", label: "Services" },
-//     { href: "#", label: "Our Works" },
-//     { href: "/certificates", label: "Certificates" },
-//     { href: "#", label: "News" },
-//     { href: "/careers", label: "Careers" },
-//   ];
-
-//   return (
-
-//         {/* Logo Section */}
-
-//         {/* Mobile Menu Button */}
-
-//            setIsMenuOpen(!isMenuOpen)}
-//             className="p-2 text-white hover:text-blue-500"
-//             aria-label="Toggle menu"
-//           >
-//             {isMenuOpen ? (
-
-//             ) : (
-
-//             )}
-
-//         {/* Desktop Navigation */}
-
-//             {navigationLinks.map((link) => (
-
-//                   {link.label}
-
-//             ))}
-
-//         {/* Contact Us Button */}
-
-//             Contact Us
-
-//         {/* Mobile Menu */}
-
-//               {navigationLinks.map((link) => (
-
-//                    setIsMenuOpen(false)}
-//                   >
-//                     {link.label}
-
-//               ))}
-
-//               Contact Us
-
-//   );
-// };
-
-// export default ResponsiveWhiteHeader;

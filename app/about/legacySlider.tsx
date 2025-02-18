@@ -102,6 +102,32 @@ export default function Legacy() {
                         className="absolute inset-0 bg-cover bg-center"
                         style={{ backgroundImage: `url(${slide.image})` }}
                       >
+                        {/* <span className="about-span">
+                          <div>
+                            <h3>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit.
+                            </h3>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. Nunc vulputate libero et velit interdum, ac
+                              aliquet odio mattis. Class aptent taciti sociosqu
+                              ad litora torquent per conubia nostra, per
+                              inceptos himenaeos. Curabitur tempus urna at
+                              turpis condimentum lobortis.
+                            </p>
+                          </div>
+                          <div>
+                            <p>
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit. Nunc vulputate libero et velit interdum, ac
+                              aliquet odio mattis. Class aptent taciti sociosqu
+                              ad litora torquent per conubia nostra, per
+                              inceptos himenaeos. Curabitur tempus urna at
+                              turpis condimentum lobortis.
+                            </p>
+                          </div>
+                        </span> */}
                         <div className="absolute inset-0 bg-black/50" />
                       </div>
                       <div className="relative h-full flex items-center">

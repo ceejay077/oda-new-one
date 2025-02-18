@@ -1,21 +1,37 @@
 "use client";
 import React, { useState } from "react";
+import { Montserrat, Inter } from "next/font/google";
+
+const montserratfont600 = Montserrat({
+  subsets: ["latin"],
+  weight: "500",
+});
+
+const interfont = Inter({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const interfont700 = Inter({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 const serviceData = [
   {
-    title: "Construction Cleaning",
+    title: "Construction Cleaning Melbourne",
     description:
-      "Professional cleaning services for construction sites and post-construction projects.",
+      "Successfully delivered comprehensive industrial cleaning services for a 100,000 sq. ft. facility.",
   },
   {
-    title: "Commercial Cleaning",
+    title: "Restaurant and Pub Cleaning ",
     description:
-      "Comprehensive cleaning solutions for commercial spaces and offices.",
+      "Provided customized cleaning solutions for a 25-story office building in Melbourne.",
   },
   {
-    title: "Residential Cleaning",
+    title: "Retail and Shopping Centers",
     description:
-      "Thorough cleaning services for homes and residential properties.",
+      "Executed daily cleaning operations for a bustling retail mall with over 50,000 visitors per day.",
   },
   {
     title: "Industrial Cleaning",
@@ -52,13 +68,15 @@ function OurServices() {
   };
 
   return (
-    <div className="flex flex-col items-center mt-11 lg:mt-32">
+    <div className="flex flex-col items-center mt-11 lg:mt-32 ">
       {/* Title and Description Section */}
-      <div className="text-center mb-12 max-w-4xl">
-        <h2 className="text-3xl text-gray-900 dark:text-sectionTitle sm:text-4xl xl:text-5xl">
+      <div className="text-center mb-12 w-[724px]">
+        <h2 className="text-[56px] text-gray-900 dark:text-sectionTitle sm:text-4xl xl:text-5xl ">
           Our Services
         </h2>
-        <p className="max-w-md mx-auto mt-5 text-base font-normal text-gray-600 dark:text-titleDescription">
+        <p
+          className={` mt-5 text-[18px]  font-normal text-gray-600 dark:text-titleDescription w-[724px] ${interfont.className}`}
+        >
           Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis.
         </p>
@@ -83,27 +101,47 @@ function OurServices() {
                 />
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent">
-                  <h3 className="absolute bottom-6 left-6 text-white text-xl font-semibold">
+                  <h3
+                    className={`absolute bottom-6 left-6 text-white text-[28px] font-semibold ${montserratfont600.className}`}
+                  >
                     {service.title}
                   </h3>
                 </div>
               </div>
               <div className="pt-6">
-                <p className="text-gray-600 text-sm">{service.description}</p>
-                <div className="mt-4">
-                  <button className="inline-flex items-center px-0 py-2 text-sm font-medium text-blue-600 hover:text-blue-800 transition-colors">
+                <p
+                  className={`text-titleDescription text-[16px] ${interfont.className}`}
+                >
+                  {service.description}
+                </p>
+                <div className="mt-4 ">
+                  <button
+                    className={`inline-flex underline
+                       items-center px-0 py-2 text-[16px] font-medium text-blue-600 hover:text-blue-800 transition-colors ${interfont700.className}`}
+                  >
                     View Service
                     <svg
-                      className="ml-2 w-4 h-4"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="29"
+                      height="29"
+                      viewBox="0 0 29 29"
                       fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
                     >
                       <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M9 5l7 7-7 7"
+                        d="M19.1508 16.287L19.1508 9.13342L11.9973 9.13342"
+                        stroke="#79B3E1"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M9.13349 19.1506L19.0507 9.2334"
+                        stroke="#79B3E1"
+                        stroke-width="1.5"
+                        stroke-miterlimit="10"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
                       />
                     </svg>
                   </button>

@@ -1,4 +1,15 @@
 import React from "react";
+import { Montserrat, Inter } from "next/font/google";
+
+const montserratfont = Montserrat({
+  subsets: ["latin"],
+  weight: "500",
+});
+
+const interfont = Inter({
+  subsets: ["latin"],
+  weight: "400",
+});
 
 function TrustedCleaningServices() {
   return (
@@ -10,7 +21,9 @@ function TrustedCleaningServices() {
             <div className="rounded-lg">
               <div className="block sm:hidden">
                 <div className="text-center my-8">
-                  <h1 className="text-4xl">Trusted Cleaning Experts</h1>
+                  <h1 className={`text-[56px] ${montserratfont.className}`}>
+                    Trusted Cleaning Experts
+                  </h1>
                 </div>
               </div>
             </div>
@@ -24,22 +37,28 @@ function TrustedCleaningServices() {
         </div>
 
         {/* Right Column - Sponsors Section */}
-        <div className="w-full sm:w-1/2  sm:mr-48">
+        <div className="w-[820px] sm:w-1/2  sm:mr-48  flex flex-col justify-center">
           <div className="p-3 sm:p-5 pt-8    relative  ">
             <div className="hidden sm:block">
               <div className="text-center text-sectionTitle">
-                <h1 className="text-[56px] text-left">
+                <h1
+                  className={`text-[56px] text-left ${montserratfont.className}`}
+                >
                   Trusted Cleaning Experts
                 </h1>
               </div>
-              <div className="text-left text-titleDescription">
-                Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                vulputate libero et velit interdum, ac aliquet odio mattis.
+              <div className="w-[820px]">
+                <div
+                  className={`text-left text-titleDescription ${interfont.className}`}
+                >
+                  Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+                  vulputate libero et velit interdum, ac aliquet odio mattis.
+                </div>
               </div>
             </div>
 
-            <div className="max-w-5xl mx-auto mt-10">
-              <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-5 not-prose">
+            <div className="max-w-2xl  mt-10">
+              <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-[64px] sm:gap-[64px] not-prose">
                 {/* ----------------------------------------------------------------------------------------------------------------------- */}
                 <a
                   href="#"
@@ -166,7 +185,7 @@ function TrustedCleaningServices() {
                   </p>
                 </a>
                 {/* ---------------------------------------------------------- */}
-                <div className="p-8 w-4/5">
+                <div className="p-8 w-[378px]">
                   <h2 className="text-xl text-titleDescription ">
                     Borem ipsum dolor sit amet, consectetur?
                   </h2>
@@ -174,7 +193,9 @@ function TrustedCleaningServices() {
                     Corem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
                   <div className="mt-[48px]">
-                    <button className="bg-[#27479B] w-[200px] h-[60px] rounded-[8px] text-white">
+                    <button
+                      className={`bg-[#27479B] w-[200px] h-[60px] rounded-[8px] text-white ${interfont.className}`}
+                    >
                       Learn More
                     </button>
                   </div>
