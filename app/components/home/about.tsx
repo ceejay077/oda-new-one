@@ -24,9 +24,9 @@ export default function about() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content Section */}
           <div className="order-2 lg:order-1">
-            <div className="max-w-xl mx-auto lg:mx-0">
+            <div className="mx-auto lg:mx-0">
               <h2
-                className={`hidden sm:block text-[56px] font-normal text-gray-900 mb-6 ${montserratfont.className}`}
+                className={`text-[56px] text-left ${montserratfont.className}`}
               >
                 About ODA
               </h2>
@@ -79,12 +79,12 @@ export default function about() {
                 <Figures />
                 <div className="flex flex-col items-center lg:items-start ml-[200px]">
                   <div
-                    className={`font-semibold text-[56px] text-indigo-800 dark:text-blue-400 mb-1   ${montserratfont.className}`}
+                    className={`font-semibold text-[56px] text-indigo-800 dark:text-blue-400 mb-1  secondary-blue  ${montserratfont.className}`}
                   >
                     500+
                   </div>
                   <span
-                    className={`${montserratfont600.className} font-medium text-lg text-gray-900`}
+                    className={`text-titleDescription  ${montserratfont} font-medium text-lg`}
                   >
                     projects
                   </span>

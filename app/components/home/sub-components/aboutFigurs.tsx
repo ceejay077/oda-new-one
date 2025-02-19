@@ -28,7 +28,7 @@ export default function Figures() {
           <div className="flex space-x-2 items-center animate-fade-in">
             <div className="w-full">
               <div
-                className={`font-semibold text-center md:text-left text-[56px] text-indigo-800 dark:text-blue-400 mb-4 ${montserratfont.className}`}
+                className={`font-semibold text-center md:text-left text-[56px] text-indigo-800 dark:text-blue-400 secondary-blue mb-4 ${montserratfont.className}`}
               >
                 200+
               </div>
