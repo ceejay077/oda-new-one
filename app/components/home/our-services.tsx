@@ -79,7 +79,7 @@ function OurServices() {
           Our Services
         </h2>
         <p
-          className={` mt-5 text-[18px]  sm:font-normal text-sm text-gray-600 dark:text-titleDescription leading-28 ${interfont.className}`}
+          className={` mt-5 sm:text-[18px]  sm:font-normal text-sm text-gray-600 dark:text-titleDescription leading-28 ${interfont.className}`}
         >
           Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis.
