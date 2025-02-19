@@ -72,14 +72,14 @@ function OurServices() {
   };
 
   return (
-    <div className="flex flex-col items-center mt-11 lg:mt-32">
+    <div className="flex flex-col items-center mt-11 lg:mt-32 px-10">
       {/* Title and Description Section */}
       <div className="text-center mb-12">
-        <h2 className= {`text-[56px] text-center ${montserratfont.className} black-blue`}>
+        <h2 className= {`xxl:text-[56px] text-[26px] text-center ${montserratfont.className} black-blue`}>
           Our Services
         </h2>
         <p
-          className={` mt-5 text-[18px]  font-normal text-gray-600 dark:text-titleDescription w-[724px] ${interfont.className}`}
+          className={` mt-5 text-[18px]  sm:font-normal text-sm text-gray-600 dark:text-titleDescription leading-28 ${interfont.className}`}
         >
           Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis.
@@ -87,15 +87,15 @@ function OurServices() {
       </div>
 
       {/* Navigation Container */}
-      <div className="w-full max-w-full  px-[200px]">
+      <div className="w-full max-w-full  sm:px-[200px] ">
         {/* Slider Section */}
-        <div className="flex justify-between gap-8 mb-8">
+        <div className="sm:flex justify-between gap-8 mb-8">
           {getVisibleServices().map((service, index) => (
             <div
               key={index + currentSlide * slidesPerView}
               className="group bg-white rounded-lg overflow-hidden transition-transform duration-300 hover:scale-[1.02] flex-1"
             >
-              <div className="relative h-[400px]">
+              <div className="relative sm:h-[400px]">
                 <img
                   alt={service.title}
                   className="w-full h-full object-cover"
@@ -106,7 +106,7 @@ function OurServices() {
                 {/* Gradient Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/50 to-transparent">
                   <h3
-                    className={`absolute bottom-6 left-6 text-white text-[28px] font-semibold ${montserratfont600.className}`}
+                    className={`absolute bottom-6 left-6 text-white sm:text-[28px] text-lg font-semibold ${montserratfont600.className}`}
                   >
                     {service.title}
                   </h3>
@@ -114,14 +114,14 @@ function OurServices() {
               </div>
               <div className="pt-6">
                 <p
-                  className={`text-titleDescription text-[16px] ${interfont.className}`}
+                  className={`text-titleDescription sm:text-[16px] text-sm leading-7 ${interfont.className}`}
                 >
                   {service.description}
                 </p>
-                <div className="mt-4 ">
+                <div className="sm:mt-4  mb-6">
                   <button
                     className={`inline-flex underline
-                       items-center px-0 py-2 text-[16px] font-medium text-blue-600 hover:text-blue-800 transition-colors secondary-blue ${interfont700.className}`}
+                       items-center px-0 py-2 sm:text-[16px] font-medium text-sm text-blue-600 hover:text-blue-800 transition-colors secondary-blue ${interfont700.className}`}
                   >
                     View Service
                     <svg

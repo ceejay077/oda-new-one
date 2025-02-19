@@ -32,7 +32,7 @@ export default function Home() {
           <div className="snap-start">
             <Hero />
           </div>
-          <div className="snap-start mb-[100px]">
+          <div className="snap-start xxl:mb-[100px]">
             <Logos />
           </div>
           {/* -------------------------------- */}
