@@ -2,6 +2,21 @@
 import React, { useState, useEffect } from "react";
 // import SuccessReadMore from "./sub-components/readMoreSuccessSection";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { Montserrat, Inter } from "next/font/google";
+const montserratfont = Montserrat({
+  subsets: ["latin"],
+  weight: "500",
+});
+
+const interfont = Inter({
+  subsets: ["latin"],
+  weight: "400",
+});
+
+const interfontbold = Inter({
+  subsets: ["latin"],
+  weight: "700",
+});
 
 const posts = [
   {
@@ -60,34 +75,35 @@ export default function BlogSection() {
   return (
     <div className="w-full max-w-full px-[200px]">
       <div className="flex justify-between items-center mb-6">
-        <h2 className="text-3xl sm:text-4xl xl:text-5xl font-normal text-gray-900 dark:text-sectionTitle">
-          Latest News from ODA
+        
+        <h2 className={`text-[56px] ${montserratfont.className} black-blue`}>
+        Latest News from ODA
         </h2>
-        <div className="text-blue-600 underline font-semibold cursor-pointer">
-          See all insights
-        </div>
+        <a href="#" className={`text-blue-700 ${interfontbold.className} font-bold underline cursor-pointer dark-blue `}>
+         See all insights
+        </a>
       </div>
 
       <div className="relative w-full flex justify-center">
-        <div className="w-full max-w-full lg:pt-10 sm:p-1 md:px-0 grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <div className="w-full max-w-full lg:pt-10 sm:p-1  grid grid-cols-1 lg:grid-cols-3 gap-20">
           {posts
             .slice(currentIndex, currentIndex + itemsPerPage)
             .map((post, index) => (
               <div key={index} className="bg-white rounded-lg  overflow-hidden">
                 <img
-                  className="w-[464px] h-[400px] object-cover"
+                  className="object-cover w-full"
                   src={post.image}
                   alt={post.title}
                 />
-                <div className="pt-4 px-6 pb-6">
-                  <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                <div className="pt-4  pb-6">
+                  <h3 className={` text-xl ${montserratfont.className}`}>
                     {post.title}
                   </h3>
-                  <p className="text-gray-600 text-sm leading-relaxed">
+                  <p className={`${interfont.className}  text-titleDescription leading-28`}>
                     {post.description}
                   </p>
                   <div className="mt-4">
-                    <a href="#" className="text-blue-600 font-medium">
+                    <a href="#" className={`text-blue-600 font-medium secondary-blue ${interfont.className}`}>
                       Read More →
                     </a>
                   </div>
