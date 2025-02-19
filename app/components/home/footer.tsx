@@ -14,7 +14,7 @@ const interfont = Inter({
 
 export default function Footer() {
   return (
-    <footer className="w-full max-w-full px-[200px] pt-20  border-t-2 bg-CTRbg h-auto sm:h-auto">
+    <footer className="w-full max-w-full md:px-[200px] pt-20  border-t-2 bg-CTRbg h-auto sm:h-auto px-10">
       <div className="grid gap-10 row-gap-6 mb-8 sm:grid-cols-2 lg:grid-cols-6  mt-8">
         <div className="sm:col-span-2">
           <a href="#" className="inline-flex items-center">

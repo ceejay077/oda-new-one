@@ -13,14 +13,14 @@ const interfont = Inter({
 
 export default function Awards() {
   return (
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center md:mt-0 mt-14 sm:py-10 ">
       
-      <div className="text-center mb-12 px-10 ">
+      <div className="text-center md:mb-12 sm:px-10 ">
         <h2 className= {`xxl:text-[56px] text-[26px] text-center ${montserratfont.className} black-blue`}>
         Awards & Certifications
         </h2>
         <p
-          className={` mt-5 sm:text-[18px] text-sm  font-normal text-gray-600 dark:text-titleDescription sm:w-[724px] ${interfont.className}`}
+          className={` mt-5 sm:text-[18px] text-sm  font-normal text-gray-600 dark:text-titleDescription md:w-[724px] ${interfont.className}`}
         >
            Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis. 

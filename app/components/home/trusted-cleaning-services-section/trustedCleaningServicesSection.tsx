@@ -14,9 +14,9 @@ const interfont = Inter({
 function TrustedCleaningServices() {
   return (
     <div className="max-w-screen mx-auto mt-1 ">
-      <div className="flex flex-col sm:flex-row items-center">
+      <div className="md:flex flex-col sm:flex-row items-center md:px-0 px-10">
         {/* Left Column - Image Section */}
-        <div className="w-full xxl:w-5/12 pl-0">
+        <div className="w-full md:w-5/12 pl-0">
           <div className="rounded-lg">
             <div className="rounded-lg">
               <div className="block sm:hidden">
@@ -37,7 +37,7 @@ function TrustedCleaningServices() {
         </div>
 
         {/* Right Column - Sponsors Section */}
-        <div className=" xxl:w-7/12  flex flex-col justify-center xxl:pr-[200px] xxl:pl-10">
+        <div className=" xxl:w-7/12   flex flex-col justify-center xxl:pr-[200px] xxl:pl-10">
           <div className="xxl:p-3 p-5 pt-8 relative  ">
             <div className="hidden sm:block">
               <div className="text-center text-sectionTitle">
@@ -185,7 +185,7 @@ function TrustedCleaningServices() {
                   </p>
                 </a>
                 {/* ---------------------------------------------------------- */}
-                <div className="p-8 w-[378px]">
+                <div className="p-8">
                   <h2 className={` text-xl ${montserratfont.className}`}>
                     Borem ipsum dolor sit amet, consectetur?
                   </h2>

@@ -80,7 +80,7 @@ function Testimonials() {
   };
 
   return (
-    <div className="w-full max-w-full sm:px-[200px] px-10 mt-20">
+    <div className="w-full max-w-full md:px-[200px]  px-10 mt-20">
       <section
         id="testimonials"
         aria-label="What our customers are saying"

@@ -72,7 +72,7 @@ function OurServices() {
   };
 
   return (
-    <div className="flex flex-col items-center mt-11 lg:mt-32 px-10">
+    <div className="md:flex flex-col items-center mt-11 lg:mt-32 md:px-0 px-10">
       {/* Title and Description Section */}
       <div className="text-center mb-12">
         <h2 className= {`xxl:text-[56px] text-[26px] text-center ${montserratfont.className} black-blue`}>
@@ -87,9 +87,9 @@ function OurServices() {
       </div>
 
       {/* Navigation Container */}
-      <div className="w-full max-w-full  sm:px-[200px] ">
+      <div className="w-full max-w-full  md:px-[200px] ">
         {/* Slider Section */}
-        <div className="sm:flex justify-between gap-8 mb-8">
+        <div className="md:flex justify-between gap-8 mb-8">
           {getVisibleServices().map((service, index) => (
             <div
               key={index + currentSlide * slidesPerView}

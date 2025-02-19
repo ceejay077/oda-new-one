@@ -79,9 +79,9 @@ export default function SuccessWorks() {
   };
 
   return (
-    <div className="w-full max-w-full px-[200px]">
+    <div className="w-full max-w-full md:px-[200px] px-10">
       <div className="flex justify-between items-center mb-6">
-        <h2 className={`text-[56px] ${montserratfont.className} black-blue`}>
+        <h2 className={`xxl:text-[56px] text-[26px] ${montserratfont.className} black-blue`}>
           Our Success Works
         </h2>
         <a href="#" className={`text-blue-700 ${interfontbold.className} font-bold underline cursor-pointer dark-blue `}>
@@ -104,11 +104,11 @@ export default function SuccessWorks() {
                   <h3 className={` text-xl ${montserratfont.className}`}>
                     {post.title}
                   </h3>
-                  <p className={`${interfont.className}  text-titleDescription leading-28`}>
+                  <p className={`${interfont.className}  text-titleDescription leading-28 sm:text-[18px]  sm:font-normal text-sm`}>
                     {post.description}
                   </p>
                   <div className="mt-4">
-                    <a href="#" className={`text-blue-600 font-medium secondary-blue ${interfont.className}`}>
+                    <a href="#" className={`text-blue-600 font-medium secondary-blue  ${interfont.className}`}>
                       Read More →
                     </a>
                   </div>
@@ -119,7 +119,7 @@ export default function SuccessWorks() {
       </div>
 
       {/* Navigation Section */}
-      <div className="flex justify-between items-center mt-6 px-4">
+      <div className="flex justify-between items-center mt-6 mb-11">
         <div className="flex space-x-2">
           {posts.map((_, index) => (
             <button

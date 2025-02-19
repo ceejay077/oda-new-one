@@ -73,10 +73,10 @@ export default function BlogSection() {
   };
 
   return (
-    <div className="w-full max-w-full px-[200px]">
-      <div className="flex justify-between items-center mb-6">
+    <div className="w-full max-w-full md:px-[200px] px-10">
+      <div className="flex justify-between items-center md:mb-6">
         
-        <h2 className={`text-[56px] ${montserratfont.className} black-blue`}>
+        <h2 className={`xxl:text-[56px] text-[26px] ${montserratfont.className} black-blue`}>
         Latest News from ODA
         </h2>
         <a href="#" className={`text-blue-700 ${interfontbold.className} font-bold underline cursor-pointer dark-blue `}>
@@ -96,10 +96,10 @@ export default function BlogSection() {
                   alt={post.title}
                 />
                 <div className="pt-4  pb-6">
-                  <h3 className={` text-xl ${montserratfont.className}`}>
+                  <h3 className={` sm:text-[28px] text-lg ${montserratfont.className}`}>
                     {post.title}
                   </h3>
-                  <p className={`${interfont.className}  text-titleDescription leading-28`}>
+                  <p className={`${interfont.className}  text-titleDescription sm:text-[16px] text-sm leading-7`}>
                     {post.description}
                   </p>
                   <div className="mt-4">
@@ -114,7 +114,7 @@ export default function BlogSection() {
       </div>
 
       {/* Navigation Section */}
-      <div className="flex justify-between items-center mt-6 px-4">
+      <div className="flex justify-between items-center mt-6 ">
         <div className="flex space-x-2">
           {posts.map((_, index) => (
             <button
