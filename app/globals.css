@@ -45,3 +45,7 @@ html {
 .about-span p {
   color: #fff;
 }
+
+.leading-28{
+  line-height: 28px;
+}

@@ -14,7 +14,7 @@ const interfont = Inter({
 function TrustedCleaningServices() {
   return (
     <div className="max-w-screen mx-auto mt-1 ">
-      <div className="flex flex-col sm:flex-row ">
+      <div className="flex flex-col sm:flex-row items-center">
         {/* Left Column - Image Section */}
         <div className="w-full sm:w-1/2 pl-0">
           <div className="rounded-lg">
@@ -29,7 +29,7 @@ function TrustedCleaningServices() {
             </div>
 
             <img
-              className="w-[800px] h-[960px] md:h-screen rounded-2xl object-contain object-left"
+              className=" h-[960px] md:h-screen rounded-2xl object-contain object-left"
               src="https://i.ibb.co/pQmmVNV/girl-home.png"
               alt="Cleaning service professional"
             />
@@ -47,18 +47,18 @@ function TrustedCleaningServices() {
                   Trusted Cleaning Experts
                 </h1>
               </div>
-              <div className="w-[820px]">
-                <div
-                  className={`text-left text-titleDescription ${interfont.className}`}
+              <div className="">
+                <p
+                  className={`text-left text-titleDescription ${interfont.className} leading-28`}
                 >
                   Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ac aliquet odio mattis.
-                </div>
+                </p>
               </div>
             </div>
 
-            <div className="max-w-2xl  mt-10">
-              <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-[64px] sm:gap-[64px] not-prose">
+            <div className="mt-10">
+              <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 gap-[64px] sm:gap-[64px] not-prose">
                 {/* ----------------------------------------------------------------------------------------------------------------------- */}
                 <a
                   href="#"
@@ -96,10 +96,10 @@ function TrustedCleaningServices() {
                         mask="url(#path-1-outside-1_1861_32371)"
                       />
                     </svg>
-                    <h1 className="text-black font-bold">Eco Friendly</h1>
+                    <h1 className={` text-xl ${montserratfont.className}`}>Experienced Team</h1>
                   </div>
 
-                  <p className="text-xs md:text-sm text-gray-600">
+                  <p className={`${interfont.className}  text-titleDescription leading-28`}>
                     DigitalOcean offers a simple and reliable cloud hosting
                     solution that enables developers to get their website or
                     application up and running quickly.
@@ -128,10 +128,10 @@ function TrustedCleaningServices() {
                         stroke="#79B3E1"
                       />
                     </svg>
-                    <h1 className="text-black font-bold">Eco Friendly</h1>
+                    <h1 className={` text-xl ${montserratfont.className}`}>Eco Friendly</h1>
                   </div>
 
-                  <p className="text-xs md:text-sm text-gray-600">
+                  <p className={`${interfont.className}  text-titleDescription leading-28`}>
                     DigitalOcean offers a simple and reliable cloud hosting
                     solution that enables developers to get their website or
                     application up and running quickly.
@@ -175,10 +175,10 @@ function TrustedCleaningServices() {
                         </clipPath>
                       </defs>
                     </svg>
-                    <h1 className="text-black font-bold">Eco Friendly</h1>
+                    <h1 className={` text-xl ${montserratfont.className}`}>Eco Friendly</h1>
                   </div>
 
-                  <p className="text-xs md:text-sm text-gray-600">
+                  <p className={`${interfont.className}  text-titleDescription `}>
                     DigitalOcean offers a simple and reliable cloud hosting
                     solution that enables developers to get their website or
                     application up and running quickly.
@@ -186,10 +186,10 @@ function TrustedCleaningServices() {
                 </a>
                 {/* ---------------------------------------------------------- */}
                 <div className="p-8 w-[378px]">
-                  <h2 className="text-xl text-titleDescription ">
+                  <h2 className={` text-xl ${montserratfont.className}`}>
                     Borem ipsum dolor sit amet, consectetur?
                   </h2>
-                  <p>
+                  <p className={`${interfont.className}  text-titleDescription leading-28`}>
                     Corem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
                   <div className="mt-[48px]">
