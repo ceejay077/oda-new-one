@@ -46,7 +46,7 @@ export default function Home() {
           <div className="sm:mt-5 lg:mt-40 snap-start">
             <About />
           </div>
-          <div className="snap-start">
+          <div className="flex flex-col  item-center snap-start">
             <OurServices />
           </div>
           <div className="section-100 flex flex-col justify-center item-center snap-start">

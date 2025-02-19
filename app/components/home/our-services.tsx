@@ -16,6 +16,10 @@ const interfont700 = Inter({
   subsets: ["latin"],
   weight: "400",
 });
+const montserratfont = Montserrat({
+  subsets: ["latin"],
+  weight: "500",
+});
 
 const serviceData = [
   {
@@ -68,10 +72,10 @@ function OurServices() {
   };
 
   return (
-    <div className="flex flex-col items-center mt-11 lg:mt-32 ">
+    <div className="flex flex-col items-center mt-11 lg:mt-32">
       {/* Title and Description Section */}
-      <div className="text-center mb-12 w-[724px]">
-        <h2 className="text-[56px] text-gray-900 dark:text-sectionTitle sm:text-4xl xl:text-5xl ">
+      <div className="text-center mb-12">
+        <h2 className= {`text-[56px] text-center ${montserratfont.className}`}>
           Our Services
         </h2>
         <p
@@ -83,7 +87,7 @@ function OurServices() {
       </div>
 
       {/* Navigation Container */}
-      <div className="w-full max-w-[1400px] px-4">
+      <div className="w-full max-w-full  px-[200px]">
         {/* Slider Section */}
         <div className="flex justify-between gap-8 mb-8">
           {getVisibleServices().map((service, index) => (
@@ -117,7 +121,7 @@ function OurServices() {
                 <div className="mt-4 ">
                   <button
                     className={`inline-flex underline
-                       items-center px-0 py-2 text-[16px] font-medium text-blue-600 hover:text-blue-800 transition-colors ${interfont700.className}`}
+                       items-center px-0 py-2 text-[16px] font-medium text-blue-600 hover:text-blue-800 transition-colors secondary-blue ${interfont700.className}`}
                   >
                     View Service
                     <svg
