@@ -62,7 +62,7 @@ export default function Home() {
           <div className="section-100 flex flex-col justify-center item-center snap-start">
             <SuccessWorks />
           </div>
-          <div className="snap-start">
+          <div className="section-100 flex flex-col justify-center item-center snap-start relative  bg-CTRbg">
             <CallToAction />
           </div>
           {/* -------------------------------------- */}

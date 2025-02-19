@@ -60,3 +60,15 @@ html {
 .dark-blue{
   color: #27479B;
 }
+
+.top-arrow{
+  position: absolute;
+  left: 48px;
+  top: 150px;
+}
+
+.curw-arrow{
+  position: absolute;
+  left: 950px;
+  bottom: 350px;
+}
