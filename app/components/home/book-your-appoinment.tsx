@@ -12,6 +12,7 @@ const interfont = Inter({
 });
 
 export default function CallToAction() {
+
   return (
     <div className="w-full max-w-full px-[200px] bg-CTRbg items-center">
       <div className="top-arrow">

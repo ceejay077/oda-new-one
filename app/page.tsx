@@ -21,7 +21,7 @@ export default function Home() {
       <div className="fixed  right-5 z-10">
         <FloatingButton />
       </div>
-
+      
       <BackToTop />
       <div className="scroll-container">
         <div className="h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth">
@@ -69,7 +69,7 @@ export default function Home() {
           <div className="section-100 flex flex-col justify-center item-center snap-start">
             <BlogSection />
           </div>
-          <div className="snap-start">
+          <div className="flex flex-col justify-center item-center snap-start">
             <Footer />
           </div>
         </div>

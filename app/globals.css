@@ -50,6 +50,10 @@ html {
   line-height: 28px;
 }
 
+.leading-40{
+  line-height: 40px;
+}
+
 .black-blue{
   color: #313132;
 }
@@ -71,4 +75,20 @@ html {
   position: absolute;
   left: 950px;
   bottom: 350px;
+}
+
+.opacity-6{
+  opacity: 0.6;
+}
+
+.border-t{
+  opacity: 0.6;
+}
+
+.bg-secondary-blue{
+  background-color: #6EA3CD;
+}
+
+.border-circle{
+  border-radius: 100%;
 }

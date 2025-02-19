@@ -3,16 +3,16 @@ import React from "react";
 function FooterSocial() {
   return (
     <div>
-      <div className=" flex items-center justify-center  ">
+      <div className=" flex items-center justify-center ">
         <div className="flex items-center justify-center gap-x-5 ">
-          <a
+          <a className="bg-secondary-blue p-2 border-circle"
             href=""
             aria-label="Find us on LinkedIn"
             target="_blank"
             rel="noopener"
           >
             <svg
-              className="h-10 w-10 text-white"
+              className="h-5 w-5 text-white"
               viewBox="0 0 48 48"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -23,14 +23,14 @@ function FooterSocial() {
               ></path>
             </svg>
           </a>
-          <a
+          <a className="bg-secondary-blue p-2 border-circle"
             href=""
             aria-label="Find us on Twitter"
             target="_blank"
             rel="noopener"
           >
             <svg
-              className="h-10 w-10 text-white"
+              className="h-5 w-5 text-white"
               viewBox="0 0 48 40"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -41,14 +41,14 @@ function FooterSocial() {
               ></path>
             </svg>
           </a>
-          <a
+          <a className="bg-secondary-blue p-2 border-circle"
             href=""
             aria-label="Find us on Facebook"
             target="_blank"
             rel="noopener"
           >
             <svg
-              className="h-10 w-10 text-white"
+              className="h-5 w-5 text-white"
               viewBox="0 0 48 48"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -59,14 +59,14 @@ function FooterSocial() {
               ></path>
             </svg>
           </a>
-          <a
+          <a className="bg-secondary-blue p-2 border-circle"
             href=""
             aria-label="Find us on Instagram"
             target="_blank"
             rel="noopener"
           >
             <svg
-              className="h-10 w-10 text-white"
+              className="h-5 w-5 text-white "
               viewBox="0 0 48 48"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
