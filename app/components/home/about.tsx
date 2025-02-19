@@ -26,7 +26,7 @@ export default function about() {
           <div className="order-2 lg:order-1">
             <div className="mx-auto lg:mx-0">
               <h2
-                className={`text-[56px] text-left ${montserratfont.className}`}
+                className={`text-[56px] text-left ${montserratfont.className} black-blue`}
               >
                 About ODA
               </h2>

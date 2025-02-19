@@ -42,7 +42,7 @@ function TrustedCleaningServices() {
             <div className="hidden sm:block">
               <div className="text-center text-sectionTitle">
                 <h1
-                  className={`text-[56px] text-left ${montserratfont.className}`}
+                  className={`text-[56px] text-left ${montserratfont.className} black-blue`}
                 >
                   Trusted Cleaning Experts
                 </h1>

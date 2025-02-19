@@ -75,7 +75,7 @@ function OurServices() {
     <div className="flex flex-col items-center mt-11 lg:mt-32">
       {/* Title and Description Section */}
       <div className="text-center mb-12">
-        <h2 className= {`text-[56px] text-center ${montserratfont.className}`}>
+        <h2 className= {`text-[56px] text-center ${montserratfont.className} black-blue`}>
           Our Services
         </h2>
         <p
