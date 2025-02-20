@@ -23,18 +23,18 @@ export default function Figures() {
 
   return (
     <div>
-      <div className="  flex items-center justify-center">
+      <div className=" flex items-center justify-center">
         <div className=" rounded-xl  transition-all duration-300 hover:shadow-indigo-500/50 dark:hover:shadow-blue-900/50">
           <div className="flex space-x-2 items-center animate-fade-in">
             <div className="w-full">
               <div
-                className={`font-semibold text-center md:text-left text-[56px] text-indigo-800 dark:text-blue-400 mb-4 ${montserratfont.className}`}
+                className={`font-semibold text-center md:text-left sm:text-[56px] text-3xl text-indigo-800 dark:text-blue-400 secondary-blue mb-4 ${montserratfont.className}`}
               >
                 200+
               </div>
 
               <div className="flex flex-col sm:flex-row items-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <div className="flex -space-x-4 overflow-hidden p-2">
+                <div className="flex -space-x-4 overflow-hidden sm:p-2">
                   {customers.map((customer) => (
                     <img
                       key={customer.id}
@@ -46,7 +46,7 @@ export default function Figures() {
                   ))}
                 </div>
                 <div className="text-black font-medium text-lg text-center sm:text-left">
-                  <p className={`text-titleDescription ${montserratfont}`}>
+                  <p className={`text-titleDescription ${montserratfont} text-lg`}>
                     Satisfied Customers
                   </p>
                 </div>

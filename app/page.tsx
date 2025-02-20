@@ -21,7 +21,7 @@ export default function Home() {
       <div className="fixed  right-5 z-10">
         <FloatingButton />
       </div>
-
+      
       <BackToTop />
       <div className="scroll-container">
         <div className="h-screen overflow-y-auto snap-y snap-mandatory scroll-smooth">
@@ -32,7 +32,7 @@ export default function Home() {
           <div className="snap-start">
             <Hero />
           </div>
-          <div className="snap-start mb-[100px]">
+          <div className="snap-start xxl:mb-[100px]">
             <Logos />
           </div>
           {/* -------------------------------- */}
@@ -46,7 +46,7 @@ export default function Home() {
           <div className="sm:mt-5 lg:mt-40 snap-start">
             <About />
           </div>
-          <div className="snap-start">
+          <div className="flex flex-col  item-center snap-start">
             <OurServices />
           </div>
           <div className="section-100 flex flex-col justify-center item-center snap-start">
@@ -62,14 +62,14 @@ export default function Home() {
           <div className="section-100 flex flex-col justify-center item-center snap-start">
             <SuccessWorks />
           </div>
-          <div className="snap-start">
+          <div className="section-100 flex flex-col justify-center item-center snap-start relative  bg-CTRbg">
             <CallToAction />
           </div>
           {/* -------------------------------------- */}
           <div className="section-100 flex flex-col justify-center item-center snap-start">
             <BlogSection />
           </div>
-          <div className="snap-start">
+          <div className="flex flex-col justify-center item-center snap-start">
             <Footer />
           </div>
         </div>

@@ -8,7 +8,7 @@ const Logo_copy = () => {
   const duplicatedLogos = [...logos, ...logos];
 
   return (
-    <div className="w-full overflow-hidden">
+    <div className="w-full overflow-hidden ">
       <div className="relative min-h-[220px] w-full flex items-center">
         <div
           className="flex items-center gap-4 md:gap-24 absolute"

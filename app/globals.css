@@ -45,3 +45,50 @@ html {
 .about-span p {
   color: #fff;
 }
+
+.leading-28{
+  line-height: 28px;
+}
+
+.leading-40{
+  line-height: 40px;
+}
+
+.black-blue{
+  color: #313132;
+}
+.secondary-blue{
+  color: #6EA3CD;
+}
+
+.dark-blue{
+  color: #27479B;
+}
+
+.top-arrow{
+  position: absolute;
+  left: 48px;
+  top: 150px;
+}
+
+.curw-arrow{
+  position: absolute;
+  left: 850px;
+  bottom: 300px;
+}
+
+.opacity-6{
+  opacity: 0.6;
+}
+
+.border-t{
+  opacity: 0.6;
+}
+
+.bg-secondary-blue{
+  background-color: #6EA3CD;
+}
+
+.border-circle{
+  border-radius: 100%;
+}

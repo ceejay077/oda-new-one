@@ -29,6 +29,9 @@ export default {
 
         
       },
+      screens: {
+        'xxl': '1800px', // Custom breakpoint for 1800px+
+      }
     },
   },
   plugins: [],

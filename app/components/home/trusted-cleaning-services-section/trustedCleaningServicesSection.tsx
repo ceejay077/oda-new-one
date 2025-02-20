@@ -14,14 +14,14 @@ const interfont = Inter({
 function TrustedCleaningServices() {
   return (
     <div className="max-w-screen mx-auto mt-1 ">
-      <div className="flex flex-col sm:flex-row ">
+      <div className="md:flex flex-col sm:flex-row items-center md:px-0 px-10">
         {/* Left Column - Image Section */}
-        <div className="w-full sm:w-1/2 pl-0">
+        <div className="w-full md:w-5/12 pl-0">
           <div className="rounded-lg">
             <div className="rounded-lg">
               <div className="block sm:hidden">
-                <div className="text-center my-8">
-                  <h1 className={`text-[56px] ${montserratfont.className}`}>
+                <div className="text-center xxl:my-8 my-2">
+                  <h1 className={`text-[36px] xxl:text-[56px] ${montserratfont.className}`}>
                     Trusted Cleaning Experts
                   </h1>
                 </div>
@@ -29,7 +29,7 @@ function TrustedCleaningServices() {
             </div>
 
             <img
-              className="w-[800px] h-[960px] md:h-screen rounded-2xl object-contain object-left"
+              className=" xxl:h-[960px] my-6 md:h-screen rounded-2xl object-contain object-left"
               src="https://i.ibb.co/pQmmVNV/girl-home.png"
               alt="Cleaning service professional"
             />
@@ -37,32 +37,32 @@ function TrustedCleaningServices() {
         </div>
 
         {/* Right Column - Sponsors Section */}
-        <div className="w-[820px] sm:w-1/2  sm:mr-48  flex flex-col justify-center">
-          <div className="p-3 sm:p-5 pt-8    relative  ">
+        <div className=" xxl:w-7/12   flex flex-col justify-center xxl:pr-[200px] xxl:pl-10">
+          <div className="xxl:p-3 p-5 pt-8 relative  ">
             <div className="hidden sm:block">
               <div className="text-center text-sectionTitle">
                 <h1
-                  className={`text-[56px] text-left ${montserratfont.className}`}
+                  className={` xxl:text-[56px] 2xl:text-[40px] text-[26px] text-left ${montserratfont.className} black-blue`}
                 >
                   Trusted Cleaning Experts
                 </h1>
               </div>
-              <div className="w-[820px]">
-                <div
-                  className={`text-left text-titleDescription ${interfont.className}`}
+              <div className="">
+                <p
+                  className={`text-left text-titleDescription ${interfont.className} leading-28`}
                 >
                   Horem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   vulputate libero et velit interdum, ac aliquet odio mattis.
-                </div>
+                </p>
               </div>
             </div>
 
-            <div className="max-w-2xl  mt-10">
-              <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-[64px] sm:gap-[64px] not-prose">
+            <div className="mt-10">
+              <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 gap-12 not-prose">
                 {/* ----------------------------------------------------------------------------------------------------------------------- */}
                 <a
                   href="#"
-                  className="relative block p-9 sm:p-9 rounded-xl shadow-md border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
+                  className="relative block p-9  rounded-xl shadow-md border-gray-200 bg-white text-center hover:shadow-lg transition-shadow"
                 >
                   <div className="flex flex-col items-center justify-center w-full mb-4 space-y-2">
                     {/* Using a placeholder image since external images aren't supported */}
@@ -96,10 +96,10 @@ function TrustedCleaningServices() {
                         mask="url(#path-1-outside-1_1861_32371)"
                       />
                     </svg>
-                    <h1 className="text-black font-bold">Eco Friendly</h1>
+                    <h1 className={` text-xl ${montserratfont.className}`}>Experienced Team</h1>
                   </div>
 
-                  <p className="text-xs md:text-sm text-gray-600">
+                  <p className={`${interfont.className}  text-titleDescription leading-28 text-sm`}>
                     DigitalOcean offers a simple and reliable cloud hosting
                     solution that enables developers to get their website or
                     application up and running quickly.
@@ -128,10 +128,10 @@ function TrustedCleaningServices() {
                         stroke="#79B3E1"
                       />
                     </svg>
-                    <h1 className="text-black font-bold">Eco Friendly</h1>
+                    <h1 className={` text-xl ${montserratfont.className}`}>Eco Friendly</h1>
                   </div>
 
-                  <p className="text-xs md:text-sm text-gray-600">
+                  <p className={`${interfont.className}  text-titleDescription leading-28 text-sm`}>
                     DigitalOcean offers a simple and reliable cloud hosting
                     solution that enables developers to get their website or
                     application up and running quickly.
@@ -175,21 +175,21 @@ function TrustedCleaningServices() {
                         </clipPath>
                       </defs>
                     </svg>
-                    <h1 className="text-black font-bold">Eco Friendly</h1>
+                    <h1 className={` text-xl ${montserratfont.className}`}>Eco Friendly</h1>
                   </div>
 
-                  <p className="text-xs md:text-sm text-gray-600">
+                  <p className={`${interfont.className}  text-titleDescription text-sm`}>
                     DigitalOcean offers a simple and reliable cloud hosting
                     solution that enables developers to get their website or
                     application up and running quickly.
                   </p>
                 </a>
                 {/* ---------------------------------------------------------- */}
-                <div className="p-8 w-[378px]">
-                  <h2 className="text-xl text-titleDescription ">
+                <div className="p-8">
+                  <h2 className={` text-xl ${montserratfont.className}`}>
                     Borem ipsum dolor sit amet, consectetur?
                   </h2>
-                  <p>
+                  <p className={`${interfont.className}  text-titleDescription leading-28`}>
                     Corem ipsum dolor sit amet, consectetur adipiscing elit.
                   </p>
                   <div className="mt-[48px]">

@@ -20,19 +20,19 @@ const interfont = Inter({
 export default function about() {
   return (
     <div className="min-h-screen bg-white">
-      <div className="w-full max-w-full  px-[200px]">
+      <div className="w-full max-w-full  xxl:px-[200px] px-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           {/* Content Section */}
           <div className="order-2 lg:order-1">
-            <div className="max-w-xl mx-auto lg:mx-0">
+            <div className="mx-auto lg:mx-0">
               <h2
-                className={`hidden sm:block text-[56px] font-normal text-gray-900 mb-6 ${montserratfont.className}`}
+                className={`xxl:text-[56px] text-[26px] text-left hidden md:block ${montserratfont.className} black-blue`}
               >
                 About ODA
               </h2>
 
               <p
-                className={`text-titleDescription mb-8 text-[18px] ${interfont.className} `}
+                className={`text-titleDescription mb-8 xxl:text-[18px] text-sm leading-7 ${interfont.className} `}
               >
                 One Direction Australia (ODA) is a leading commercial cleaning
                 company established in 2007, dedicated to addressing industry
@@ -69,7 +69,7 @@ export default function about() {
                         />
                       </svg>
                     </div>
-                    <p className="ml-3 text-gray-600">{feature}</p>
+                    <p className={`ml-3 text-gray-600 text-sm  ${interfont.className}`}>{feature}</p>
                   </li>
                 ))}
               </ul>
@@ -77,14 +77,14 @@ export default function about() {
               {/* Stats Section */}
               <div className="grid grid-cols-2 gap-8 mb-8">
                 <Figures />
-                <div className="flex flex-col items-center lg:items-start ml-[200px]">
+                <div className="flex flex-col items-center lg:items-start sm:ml-[200px]">
                   <div
-                    className={`font-semibold text-[56px] text-indigo-800 dark:text-blue-400 mb-1   ${montserratfont.className}`}
+                    className={`font-semibold sm:text-[56px] text-3xl text-indigo-800 dark:text-blue-400 mb-1  secondary-blue  ${montserratfont.className}`}
                   >
                     500+
                   </div>
                   <span
-                    className={`${montserratfont600.className} font-medium text-lg text-gray-900`}
+                    className={`text-titleDescription  ${montserratfont} font-medium text-lg`}
                   >
                     projects
                   </span>
@@ -105,7 +105,7 @@ export default function about() {
 
           {/* Image Section */}
           <div className="order-1 lg:order-2">
-            <h2 className="block sm:hidden text-3xl font-normal text-gray-900 mb-6">
+            <h2 className="block xxl:hidden text-3xl font-normal text-gray-900 mb-6">
               About ODA
             </h2>
 
@@ -117,6 +117,7 @@ export default function about() {
               />
             </div>
           </div>
+
         </div>
       </div>
     </div>
