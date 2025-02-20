@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Montserrat, Inter } from "next/font/google";
+// import { Montserrat, Inter } from "next/font/google";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -14,17 +14,17 @@ const geistMono = localFont({
   weight: "100 900",
 });
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  variable: "--font-montserrat",
-  display: "swap",
-});
+// const montserrat = Montserrat({
+//   subsets: ["latin"],
+//   variable: "--font-montserrat",
+//   display: "swap",
+// });
 
-const inter = Inter({
-  subsets: ["latin"],
-  variable: "--font-inter",
-  display: "swap",
-});
+// const inter = Inter({
+//   subsets: ["latin"],
+//   variable: "--font-inter",
+//   display: "swap",
+// });
 
 export const metadata: Metadata = {
   title: "Create Next App",

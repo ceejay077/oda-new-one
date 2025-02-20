@@ -1,7 +1,7 @@
 import React from "react";
 import SuccessReadMore from "./sub-components/readMoreSuccessSection";
 
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 
 // const montserratfont = Montserrat({
 //   subsets: ["latin"],
