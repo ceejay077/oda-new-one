@@ -7,10 +7,10 @@ const montserratfont = Montserrat({
   weight: "500",
 });
 
-const montserratfont600 = Montserrat({
-  subsets: ["latin"],
-  weight: "500",
-});
+// const montserratfont600 = Montserrat({
+//   subsets: ["latin"],
+//   weight: "500",
+// });
 
 const interfont = Inter({
   subsets: ["latin"],
@@ -69,7 +69,11 @@ export default function about() {
                         />
                       </svg>
                     </div>
-                    <p className={`ml-3 text-gray-600 text-sm  ${interfont.className}`}>{feature}</p>
+                    <p
+                      className={`ml-3 text-gray-600 text-sm  ${interfont.className}`}
+                    >
+                      {feature}
+                    </p>
                   </li>
                 ))}
               </ul>
@@ -117,7 +121,6 @@ export default function about() {
               />
             </div>
           </div>
-
         </div>
       </div>
     </div>

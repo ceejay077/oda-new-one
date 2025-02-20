@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
-import { Inter, Montserrat } from "next/font/google";
+import { Inter } from "next/font/google";
 
 const interfont = Inter({
   subsets: ["latin"],
