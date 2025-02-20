@@ -1,15 +1,15 @@
 import React from "react";
-import { Montserrat, Inter } from "next/font/google";
+import { Montserrat } from "next/font/google";
 
 const montserratfont = Montserrat({
   subsets: ["latin"],
   weight: "500",
 });
 
-const interfont = Inter({
-  subsets: ["latin"],
-  weight: "400",
-});
+// const interfont = Inter({
+//   subsets: ["latin"],
+//   weight: "400",
+// });
 
 export default function Figures() {
   const customers = [
@@ -46,7 +46,9 @@ export default function Figures() {
                   ))}
                 </div>
                 <div className="text-black font-medium text-lg text-center sm:text-left">
-                  <p className={`text-titleDescription ${montserratfont} text-lg`}>
+                  <p
+                    className={`text-titleDescription ${montserratfont} text-lg`}
+                  >
                     Satisfied Customers
                   </p>
                 </div>
